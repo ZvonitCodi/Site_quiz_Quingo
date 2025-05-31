@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Layout</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div id="logo-container">
+        <div id="logo">
+            <img src="path-to-logo.png" alt="Game Logo">
+        </div>
+        <div id="company-name">
+            <p>Quingo</p>
+        </div>
+    </div>
+    <div id="header-right">
+        <div id="user-section">
+            <button id="login-button" onclick="openLoginModal()">
+                <img src="path-to-login-icon.png" alt="Login Icon">
+                Войти
+            </button>
+        </div>
+        <div id="language-switcher">
+            <img src="path-to-globe-icon.png" alt="Globe Icon">
+            <span>ru</span>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div id="main-content">
+        <div id="public-rooms-container">
+            <h3>Доступные комнаты</h3>
+            <ol id="public-rooms-list"></ol>
+        </div>
+        <div id="play-button">
+            <button onclick="startGame()">
+                <img src="path-to-controller-icon.png" alt="Controller Icon">
+                ИГРАТЬ
+            </button>
+        </div>
+        <div id="leaderboard-container">
+            <h3>🏆 Лидерборд</h3>
+            <ol id="leaderboard-list"></ol>
+            <div id="current-user-rank"></div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="footer-content">
+        <div id="legal-info">
+            <p>&copy; 2025 ООО "Quingo Games". Все права защищены.</p>
+            <p>ОГРН: 1234567890123 | ИНН: 9876543210</p>
+        </div>
+        <div id="footer-links">
+            <a href="/terms">Условия использования</a>
+            <a href="/privacy">Политика конфиденциальности</a>
+            <a href="/faq">FAQ</a>
+        </div>
+        <div id="footer-contact">
+            <p>Поддержка: <a href="mailto:Quingogame@yandex.ru">Quingogame@yandex.ru</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Модальное окно входа -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>ВХОД</h2>
+            <button class="close-btn" onclick="closeLoginModal()">✖</button>
+        </div>
+        <div class="modal-body">
+            <input type="text" id="nickname" placeholder="Nickname">
+            <input type="password" id="login-password" placeholder="Пароль">
+            <button class="login-btn" onclick="loginUser()">Войти</button>
+            <p class="modal-link"><button onclick="openRecoveryModal()" class="register-link recovery-link">Забыли пароль?</button></p>
+            <p>Нет аккаунта?</p>
+            <p class="modal-link"><button class="register-link" onclick="openRegisterModal()">Регистрация</button></p>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно восстановления пароля -->
+<div id="recovery-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Восстановление пароля</h2>
+            <button class="close-btn" onclick="closeRecoveryModal()">✖</button>
+        </div>
+        <div class="modal-body">
+            <input type="text" id="recovery-nickname" placeholder="Введите ваш никнейм">
+            <button onclick="sendRecoveryCode()">Отправить код</button>
+            <div id="code-section" style="display:none; margin-top: 5px;">
+                <input type="text" id="recovery-code" placeholder="Код из письма">
+                <input type="password" id="new-password" placeholder="Новый пароль">
+                <button onclick="verifyRecoveryCode()">Сбросить пароль</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно регистрации -->
+<div id="register-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>РЕГИСТРАЦИЯ</h2>
+            <button class="close-btn" onclick="closeRegisterModal()">✖</button>
+        </div>
+        <div class="modal-body">
+            <input type="text" id="register-nickname" placeholder="Nickname">
+            <input type="email" id="register-email" placeholder="E-MAIL">
+            <label class="radio-group">
+                <span class="label-text">Пол:</span>
+                <label class="radio-option">
+                    <input type="radio" name="gender" value="female"> Жен.
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="gender" value="male"> Муж.
+                </label>
+            </label>
+            <input type="password" id="register-password" placeholder="Пароль">
+            <input type="password" id="register-password-repeat" placeholder="Повтор пароля">
+            <button onclick="registerUser(),closeLoginModal()">Зарегистрироваться</button>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно выбора -->
+<div id="roomChoice" class="modal" style="display: none;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Меню</h2>
+            <button class="close-btn" onclick="closeRoomModal()">✖</button>
+        </div>
+        <div class="modal-body">
+            <button id="createRoomBtn">Создать комнату</button>
+            <button id="joinRoomBtn">Присоединиться к комнате</button>
+            <div id="joinInput" style="display: none;">
+                <input type="text" id="roomCodeInput" placeholder="Введите код комнаты">
+                <button id="joinWithCodeBtn">Присоединиться</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

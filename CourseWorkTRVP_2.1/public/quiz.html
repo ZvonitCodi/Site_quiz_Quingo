@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title id="page-title">Викторина</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="quizGame.js" defer></script>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="welcome-text">Добро пожаловать, <span id="player-name"></span>!</h1>
+    </header>
+    <div class="main">
+      <!-- Левая панель -->
+      <aside class="sidebar">
+        <h3 id="players-title">Игроки в комнате:</h3>
+        <ul id="players"></ul>
+        <div id="tooltip" class="tooltip"></div>
+        <p id="room-code-label">Код комнаты: <strong id="room-code"></strong></p>
+        <div id="host-controls" style="display: none;">
+          <label id="question-count-label" for="question-count">Количество вопросов (1-50):</label>
+          <input type="number" id="question-count" value="15" min="1" max="50">
+          <div>
+            <label id="privacy-toggle-label" for="privacy-toggle">Приватная комната:</label>
+            <input type="checkbox" id="privacy-toggle">
+          </div>
+          <button id="start-btn" class="btn">Начать игру</button>
+        </div>
+        <button id="logout-btn" class="btn leave">Покинуть игру</button>
+      </aside>
+      <!-- Правая часть -->
+      <section class="game-area">
+        <!-- Вопрос -->
+        <div id="question-section" class="question-section" style="display: none;">
+          <div id="question-number"></div>
+          <h2 id="question" class="question-text"></h2>
+          <div id="answers" class="answers"></div>
+        </div>
+        <!-- Завершение -->
+        <div id="result-section" class="result-section" style="display: none;">
+          <h2 id="game-over-text">Игра окончена!</h2>
+          <ul id="results"></ul>
+        </div>
+        <!-- Чат -->
+        <div class="chat-section">
+          <div id="chat-messages" class="chat-messages"></div>
+          <form id="chat-form" class="chat-form">
+            <input type="text" id="chat-input" placeholder="Введите сообщение" autocomplete="off" />
+            <button type="submit">➤</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
