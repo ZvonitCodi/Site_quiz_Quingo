@@ -34,6 +34,33 @@ document.addEventListener('DOMContentLoaded', async () => {
     setInterval(sendBufferedLogs, 5000);
 });
 
+function showCustomAlert(message) {
+    const currentLanguage = localStorage.getItem('language') || 'ru';
+    const modal = document.getElementById('custom-alert-modal');
+    const title = document.getElementById('custom-alert-title');
+    const messageElement = document.getElementById('custom-alert-message');
+    const okButton = document.querySelector('#custom-alert-modal .save-btn'); // Изменено на .save-btn
+
+    if (!modal || !title || !messageElement || !okButton) {
+        console.error('Custom alert elements not found');
+        return;
+    }
+
+    // Устанавливаем текст с учетом языка
+    title.textContent = currentLanguage === 'en' ? 'Notification' : 'Уведомление';
+    messageElement.textContent = message;
+    okButton.textContent = currentLanguage === 'en' ? 'OK' : 'ОК';
+
+    modal.style.display = 'block';
+}
+
+function closeCustomAlert() {
+    const modal = document.getElementById('custom-alert-modal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
 function applyLanguage(lang) {
     if (lang === 'en') {
         switchToEnglish();
@@ -158,20 +185,6 @@ async function checkAuthAndLoadUser() {
     }
 }
 
-// function setupEventListeners() {
-//     elements.nicknameInput.addEventListener('blur', validateNickname);
-//     elements.nicknameInput.addEventListener('keydown', (e) => {
-//         if (e.key === 'Enter') {
-//             e.preventDefault();
-//             validateNickname();
-//         }
-//     });
-//     elements.profileForm.addEventListener('submit', async (e) => {
-//         e.preventDefault();
-//         await updateProfile();
-//     });
-// }
-
 function setupEventListeners() {
     elements.nicknameInput.addEventListener('blur', validateNickname);
     elements.nicknameInput.addEventListener('keydown', (e) => {
@@ -281,69 +294,6 @@ function validateBirthDate(birthDate) {
     return { valid: true };
 }
 
-// async function updateProfile() {
-//     const newNickname = elements.nicknameInput.value.trim();
-//     const newEmail = elements.emailInput.value.trim();
-//     const newBirthDate = elements.birthdateInput.value || null;
-//     const currentLanguage = localStorage.getItem('language') || 'ru';
-
-//     const prevEmail = currentUser.email;
-//     const prevBirthDate = currentUser.birth_date ? currentUser.birth_date.split('T')[0] : '';
-
-//     if (newNickname !== currentUser.username && !isNicknameValid) {
-//         const isValid = await validateNickname();
-//         if (!isValid) return;
-//     }
-
-//     if (!newEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(newEmail)) {
-//         elements.emailInput.value = prevEmail;
-//         alert(currentLanguage === 'en' ? 'Please enter a valid email' : 'Введите корректный email');
-//         return;
-//     }
-
-//     const birthDateValidation = validateBirthDate(newBirthDate);
-//     if (!birthDateValidation.valid) {
-//         elements.birthdateInput.value = prevBirthDate;
-//         alert(birthDateValidation.message);
-//         return;
-//     }
-
-//     const formData = {
-//         username: newNickname,
-//         email: newEmail,
-//         birth_date: newBirthDate,
-//         gender: document.querySelector('input[name="gender"]:checked')?.value || null,
-//         about: elements.aboutInput.value.trim()
-//     };
-
-//     try {
-//         await fetchWithErrorHandling(`${API_URL}/user/${currentUser.id}`, {
-//             method: 'PUT',
-//             body: JSON.stringify(formData)
-//         });
-//         currentUser.username = newNickname;
-//         currentUser.email = newEmail;
-//         currentUser.birth_date = newBirthDate;
-//         localStorage.setItem('nickname', newNickname);
-//         elements.userNicknameDisplay.textContent = newNickname;
-//         alert(currentLanguage === 'en' ? 'Profile updated successfully!' : 'Профиль успешно обновлен!');
-//     } catch (error) {
-//         if (error.message.includes('Email уже занят')) {
-//             elements.emailInput.value = prevEmail;
-//             alert(currentLanguage === 'en' ? 'This email is already taken' : 'Этот email уже занят');
-//         } else {
-//             elements.emailInput.value = prevEmail;
-//             elements.birthdateInput.value = prevBirthDate;
-//             alert(error.message || (currentLanguage === 'en' ? 'Failed to update profile' : 'Не удалось обновить профиль'));
-//         }
-//     }
-// }
-
-
-
-
-
-
 async function updateProfile() {
     const newNickname = elements.nicknameInput.value.trim();
     const newEmail = elements.emailInput.value.trim();
@@ -360,14 +310,14 @@ async function updateProfile() {
 
     if (!newEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(newEmail)) {
         elements.emailInput.value = prevEmail;
-        alert(currentLanguage === 'en' ? 'Please enter a valid email' : 'Введите корректный email');
+        showCustomAlert(currentLanguage === 'en' ? 'Please enter a valid email' : 'Введите корректный email');
         return;
     }
 
     const birthDateValidation = validateBirthDate(newBirthDate);
     if (!birthDateValidation.valid) {
         elements.birthdateInput.value = prevBirthDate;
-        alert(birthDateValidation.message);
+        showCustomAlert(birthDateValidation.message);
         return;
     }
 
@@ -391,43 +341,18 @@ async function updateProfile() {
         localStorage.setItem('nickname', newNickname);
         elements.userNicknameDisplay.textContent = newNickname;
         updateAvatar(); // Update avatar after saving profile
-        alert(currentLanguage === 'en' ? 'Profile updated successfully!' : 'Профиль успешно обновлен!');
+        showCustomAlert(currentLanguage === 'en' ? 'Profile updated successfully!' : 'Профиль успешно обновлен!');
     } catch (error) {
         if (error.message.includes('Email уже занят')) {
             elements.emailInput.value = prevEmail;
-            alert(currentLanguage === 'en' ? 'This email is already taken' : 'Этот email уже занят');
+            showCustomAlert(currentLanguage === 'en' ? 'This email is already taken' : 'Этот email уже занят');
         } else {
             elements.emailInput.value = prevEmail;
             elements.birthdateInput.value = prevBirthDate;
-            alert(error.message || (currentLanguage === 'en' ? 'Failed to update profile' : 'Не удалось обновить профиль'));
+            showCustomAlert(error.message || (currentLanguage === 'en' ? 'Failed to update profile' : 'Не удалось обновить профиль'));
         }
     }
 }
-
-// async function loadUserProfile() {
-//     try {
-//         const user = await fetchWithErrorHandling(`${API_URL}/user/${currentUser.id}`);
-//         currentUser = { ...currentUser, ...user };
-
-//         elements.nicknameInput.value = user.username;
-//         elements.emailInput.value = user.email;
-//         elements.userNicknameDisplay.textContent = user.username;
-
-//         if (user.birth_date) {
-//             elements.birthdateInput.value = user.birth_date.split('T')[0];
-//         }
-//         if (user.gender) {
-//             const genderInput = document.querySelector(`input[name="gender"][value="${user.gender}"]`);
-//             if (genderInput) genderInput.checked = true;
-//         }
-//         if (user.about) {
-//             elements.aboutInput.value = user.about;
-//         }
-//     } catch (error) {
-//         await logError('Не удалось загрузить данные профиля', '');
-//         alert(localStorage.getItem('language') === 'en' ? 'Failed to load profile data' : 'Не удалось загрузить данные профиля');
-//     }
-// }
 
 async function loadUserProfile() {
     try {
@@ -451,7 +376,7 @@ async function loadUserProfile() {
         }
     } catch (error) {
         await logError('Не удалось загрузить данные профиля', '');
-        alert(localStorage.getItem('language') === 'en' ? 'Failed to load profile data' : 'Не удалось загрузить данные профиля');
+        showCustomAlert(localStorage.getItem('language') === 'en' ? 'Failed to load profile data' : 'Не удалось загрузить данные профиля');
     }
 }
 
@@ -485,9 +410,11 @@ async function loadUserStats() {
     } catch (error) {
         console.error('Error in loadUserStats:', error);
         await logError('Ошибка загрузки статистики', `${API_URL}/user-stats/${currentUser.id}`);
-        alert(currentLanguage === 'en'
+        showCustomAlert(
+            currentLanguage === 'en'
             ? 'Failed to load statistics. Please try again later.'
-            : 'Не удалось загрузить статистику. Попробуйте позже.');
+            : 'Не удалось загрузить статистику. Попробуйте позже.'
+        );
         // Устанавливаем значения по умолчанию
         if (elements.totalGames) elements.totalGames.textContent = '0';
         if (elements.totalWins) elements.totalWins.textContent = '0';
@@ -532,7 +459,7 @@ function deleteAccount() {
         .then(() => logoutUser())
         .catch(async error => {
             await logError('Не удалось удалить аккаунт', '');
-            alert(error.message || (currentLanguage === 'en' ? 'Failed to delete account' : 'Не удалось удалить аккаунт'));
+            showCustomAlert(error.message || (currentLanguage === 'en' ? 'Failed to delete account' : 'Не удалось удалить аккаунт'));
         });
 }
 
@@ -543,7 +470,7 @@ async function logoutUser() {
         window.location.href = 'index.html';
     } catch (error) {
         await logError('Ошибка при выходе', '');
-        alert((localStorage.getItem('language') === 'en' ? 'Error logging out: ' : 'Ошибка при выходе: ') + error.message);
+        showCustomAlert((localStorage.getItem('language') === 'en' ? 'Error logging out: ' : 'Ошибка при выходе: ') + error.message);
     }
 }
 

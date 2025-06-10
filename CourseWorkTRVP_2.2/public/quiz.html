@@ -54,5 +54,18 @@
       </section>
     </div>
   </div>
+  <!-- Модальное окно для кастомного alert -->
+<div id="custom-alert-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="custom-alert-title">Уведомление</h2>
+            <button class="close-btn" onclick="closeCustomAlert()">×</button>
+        </div>
+        <div class="modal-body">
+            <p id="custom-alert-message"></p>
+            <button class="btn" onclick="closeCustomAlert()">ОК</button>
+        </div>
+    </div>
+</div>
 </body>
 </html>

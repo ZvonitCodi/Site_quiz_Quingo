@@ -37,6 +37,33 @@ function closeRecoveryModal() {
     document.getElementById('code-section').style.display = 'none';
 }
 
+function showCustomAlert(message) {
+    const currentLanguage = localStorage.getItem('language') || 'ru';
+    const modal = document.getElementById('custom-alert-modal');
+    const title = document.getElementById('custom-alert-title');
+    const messageElement = document.getElementById('custom-alert-message');
+    const okButton = document.querySelector('#custom-alert-modal .login-btn');
+
+    if (!modal || !title || !messageElement || !okButton) {
+        console.error('Custom alert elements not found');
+        return;
+    }
+
+    // Устанавливаем текст с учетом языка
+    title.textContent = currentLanguage === 'en' ? 'Notification' : 'Уведомление';
+    messageElement.textContent = message;
+    okButton.textContent = currentLanguage === 'en' ? 'OK' : 'ОК';
+
+    modal.style.display = 'block';
+}
+
+function closeCustomAlert() {
+    const modal = document.getElementById('custom-alert-modal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
 async function sendRecoveryCode() {
     const nickname = document.getElementById('recovery-nickname').value;
 
@@ -48,7 +75,8 @@ async function sendRecoveryCode() {
         });
 
         const result = await res.json();
-        alert(result.message);
+        showCustomAlert(result.message);
+        //alert(result.message);
 
         if (res.ok && result.email) {
             recoveryEmail = result.email;
@@ -56,7 +84,8 @@ async function sendRecoveryCode() {
         }
     } catch (error) {
         console.error('Recovery code error:', error);
-        alert('Ошибка при отправке кода: ' + error.message);
+        showCustomAlert('Ошибка при отправке кода: ' + error.message);
+        //alert('Ошибка при отправке кода: ' + error.message);
     }
 }
 
@@ -65,7 +94,7 @@ async function verifyRecoveryCode() {
     const newPassword = document.getElementById('new-password').value;
 
     if (!recoveryEmail) {
-        alert("Email не найден. Пожалуйста, сначала отправьте код.");
+        showCustomAlert("Email не найден. Пожалуйста, сначала отправьте код.");
         return;
     }
 
@@ -77,13 +106,13 @@ async function verifyRecoveryCode() {
         });
 
         const result = await res.json();
-        alert(result.message);
+        showCustomAlert(result.message);
         if (res.ok) {
             closeRecoveryModal();
         }
     } catch (error) {
         console.error('Verify recovery code error:', error);
-        alert('Ошибка при сбросе пароля: ' + error.message);
+        showCustomAlert('Ошибка при сбросе пароля: ' + error.message);
     }
 }
 
@@ -190,9 +219,9 @@ function switchToEnglish() {
         <p>OGRN: 1234567890123 | TIN: 9876543210</p>
     `;
     document.querySelector('#footer-links').innerHTML = `
-        <a href="/terms">Terms of Use</a>
-        <a href="/privacy">Privacy Policy</a>
-        <a href="/faq">FAQ</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
     `;
     document.querySelector('#footer-contact').innerHTML = `
         <p>Support: <a href="mailto:Quingogame@yandex.ru">Quingogame@yandex.ru</a></p>
@@ -263,9 +292,9 @@ function switchToRussian() {
         <p>ОГРН: 1234567890123 | ИНН: 9876543210</p>
     `;
     document.querySelector('#footer-links').innerHTML = `
-        <a href="/terms">Условия использования</a>
-        <a href="/privacy">Политика конфиденциальности</a>
-        <a href="/faq">FAQ</a>
+        <a href="terms.html">Условия использования</a>
+        <a href="privacy.html">Политика конфиденциальности</a>
+        <a href="faq.html">FAQ</a>
     `;
     document.querySelector('#footer-contact').innerHTML = `
         <p>Поддержка: <a href="mailto:Quingogame@yandex.ru">Quingogame@yandex.ru</a></p>
@@ -363,11 +392,11 @@ async function loginUser() {
             closeLoginModal();
             await loadLeaderboard(nickname);
         } else {
-            alert(result.message);
+            showCustomAlert(result.message);
         }
     } catch (error) {
         console.error('Login error:', error);
-        alert(
+        showCustomAlert(
             currentLanguage === 'en'
                 ? 'Login error: ' + error.message
                 : 'Ошибка при входе: ' + error.message
@@ -384,7 +413,7 @@ async function registerUser() {
     const currentLanguage = localStorage.getItem('language') || 'ru';
 
     if (password !== passwordRepeat) {
-        alert(
+        showCustomAlert(
             currentLanguage === 'en'
                 ? 'Passwords do not match!'
                 : 'Пароли не совпадают!'
@@ -402,7 +431,7 @@ async function registerUser() {
         });
 
         const result = await response.json();
-        alert(result.message);
+        showCustomAlert(result.message);
         if (response.ok) {
             localStorage.setItem('nickname', nickname);
             updateUI(nickname, gender);
@@ -411,7 +440,7 @@ async function registerUser() {
         }
     } catch (error) {
         console.error('Register error:', error);
-        alert(
+        showCustomAlert(
             currentLanguage === 'en'
                 ? 'Registration error: ' + error.message
                 : 'Ошибка при регистрации: ' + error.message
@@ -498,7 +527,7 @@ function startGame() {
     const nickname = localStorage.getItem('nickname');
     const currentLanguage = localStorage.getItem('language') || 'ru';
     if (!nickname) {
-        alert(
+        showCustomAlert(
             currentLanguage === 'en'
                 ? 'Please log in!'
                 : 'Пожалуйста, войдите в аккаунт!'
@@ -537,7 +566,7 @@ socket.on('roomJoined', ({ roomCode, isPrivate }) => {
 socket.on('error', (message) => {
     console.error(`Socket error: ${message}`);
     const currentLanguage = localStorage.getItem('language') || 'ru';
-    alert(message);
+    showCustomAlert(message);
     if (message === (currentLanguage === 'en' ? 'Room not found' : 'Комната не найдена')) {
         localStorage.removeItem('roomCode');
         sessionStorage.removeItem('alreadyJoined');
@@ -569,7 +598,7 @@ function updatePublicRooms(rooms) {
                 const roomCode = button.dataset.roomCode;
                 const nickname = localStorage.getItem('nickname');
                 if (!nickname) {
-                    alert(
+                    showCustomAlert(
                         currentLanguage === 'en'
                             ? 'Please log in!'
                             : 'Пожалуйста, войдите в аккаунт!'

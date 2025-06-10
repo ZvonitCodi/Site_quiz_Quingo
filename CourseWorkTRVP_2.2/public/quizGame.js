@@ -1,3 +1,46 @@
+// Определяем функции alert в глобальной области видимости
+let alertResolve = null;
+
+function showCustomAlert(message, type = 'info', callback = null) {
+    const currentLanguage = localStorage.getItem('language') || 'ru';
+    const modal = document.getElementById('custom-alert-modal');
+    const title = document.getElementById('custom-alert-title');
+    const messageElement = document.getElementById('custom-alert-message');
+    const okButton = document.querySelector('#custom-alert-modal .btn');
+
+    if (!modal || !title || !messageElement || !okButton) {
+        console.error('Custom alert elements not found:', {
+            modal: !!modal,
+            title: !!title,
+            messageElement: !!messageElement,
+            okButton: !!okButton
+        });
+        if (callback) callback();
+        return;
+    }
+
+    title.textContent = currentLanguage === 'en' ? 'Notification' : 'Уведомление';
+    messageElement.textContent = message;
+    okButton.textContent = currentLanguage === 'en' ? 'OK' : 'ОК';
+
+    modal.classList.remove('alert-error', 'alert-success', 'alert-info');
+    modal.classList.add(`alert-${type}`);
+
+    alertResolve = callback;
+    modal.style.display = 'block';
+}
+
+function closeCustomAlert() {
+    const modal = document.getElementById('custom-alert-modal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+    if (alertResolve) {
+        alertResolve();
+        alertResolve = null;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const socket = io();
 
@@ -156,9 +199,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     socket.on('connect_error', (error) => {
         console.error('Socket connection error:', error);
-        alert(currentLanguage === 'en' 
+        showCustomAlert(
+            currentLanguage === 'en' 
             ? 'Failed to connect to server. Please try again.'
-            : 'Не удалось подключиться к серверу. Попробуйте снова.');
+            : 'Не удалось подключиться к серверу. Попробуйте снова.'
+        );
     });
 
     function updateHostControls() {
@@ -185,9 +230,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const questionCountInput = document.getElementById('question-count').value;
                 const questionCount = parseInt(questionCountInput) || 15;
                 if (questionCount < 1 || questionCount > 50) {
-                    alert(currentLanguage === 'en' 
+                    showCustomAlert(
+                        currentLanguage === 'en' 
                         ? 'Number of questions must be between 1 and 50'
-                        : 'Количество вопросов должно быть от 1 до 50');
+                        : 'Количество вопросов должно быть от 1 до 50'
+                    );
                     return;
                 }
                 socket.emit('startGame', { roomCode, questionCount });
@@ -288,35 +335,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
     socket.on('error', (message) => {
         console.error(`Socket error: ${message}`);
-        alert(message);
-        if (message === (currentLanguage === 'en' ? 'Room not found' : 'Комната не найдена')) {
-            localStorage.removeItem('roomCode');
-            sessionStorage.removeItem('alreadyJoined');
-            window.location.href = 'index.html';
-        }
+        showCustomAlert(
+            message,
+            'error',
+            () => {
+                if (message === (currentLanguage === 'en' ? 'Room not found' : 'Комната не найдена')) {
+                    localStorage.removeItem('roomCode');
+                    sessionStorage.removeItem('alreadyJoined');
+                    window.location.href = `index.html?lang=${currentLanguage}`;
+                }
+            }
+        );
     });
 
     socket.on('roomExpired', ({ message }) => {
-        alert(message);
-        localStorage.removeItem('roomCode');
-        sessionStorage.removeItem('alreadyJoined');
-        window.location.href = 'index.html';
+        showCustomAlert(
+            message,
+            'error',
+            () => {
+                localStorage.removeItem('roomCode');
+                sessionStorage.removeItem('alreadyJoined');
+                window.location.href = `index.html?lang=${currentLanguage}`;
+            }
+        );
     });
 
     socket.on('hostLeft', ({ message }) => {
-        alert(message);
-        localStorage.removeItem('roomCode');
-        sessionStorage.removeItem('alreadyJoined');
-        window.location.href = 'index.html';
+       showCustomAlert(
+            message,
+            'error',
+            () => {
+                localStorage.removeItem('roomCode');
+                sessionStorage.removeItem('alreadyJoined');
+                window.location.href = `index.html?lang=${currentLanguage}`;
+            }
+        );
     });
 
     socket.on('kicked', () => {
-        alert(currentLanguage === 'en'
-            ? 'You have been kicked from the room by the host.'
-            : 'Вы были исключены из комнаты хостом.');
-        localStorage.removeItem('roomCode');
-        sessionStorage.removeItem('alreadyJoined');
-        window.location.href = 'index.html';
+        showCustomAlert(
+            currentLanguage === 'en'
+                ? 'You have been kicked from the room by the host.'
+                : 'Вы были исключены из комнаты хостом.',
+            'error',
+            () => {
+                localStorage.removeItem('roomCode');
+                sessionStorage.removeItem('alreadyJoined');
+                window.location.href = `index.html?lang=${currentLanguage}`;
+            }
+        );
     });
 
     const logoutBtn = document.getElementById('logout-btn');

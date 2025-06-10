@@ -323,6 +323,101 @@ body {
     background-color: #5ba647;
 }
 
+/* Стили для кастомного alert */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+#custom-alert-modal .modal-content {
+    background-color: #fff5f5; /* Фон, как у .sidebar */
+    border: 2px solid #ffcccc; /* Граница, как у .sidebar */
+    padding: 15px;
+    width: 90%;
+    max-width: 350px;
+    margin: 15% auto;
+    text-align: center;
+    font-family: 'MyFont', sans-serif;
+    color: #333;
+    border-radius: 5px;
+}
+
+#custom-alert-modal .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#custom-alert-modal .modal-header h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#custom-alert-modal .modal-header .close-btn {
+    background-color: #e74c3c; /* Красный, как .leave */
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#custom-alert-modal .modal-header .close-btn:hover {
+    background-color: #c0392b;
+}
+
+#custom-alert-modal .modal-body p {
+    margin: 15px 0 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+#custom-alert-modal .btn {
+    background-color: #6fcb52; 
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-family: 'MyFont', sans-serif;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 120px;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#custom-alert-modal .btn:hover {
+    background-color: #5ba647;
+}
+
+/* Типы alert */
+#custom-alert-modal.alert-error .modal-content {
+    background-color: #ffe6e6; 
+    border-color: #ffcccc;
+}
+
+#custom-alert-modal.alert-success .modal-content {
+    background-color: #e6ffe6; 
+    border-color: #6fcb52;
+}
+
+#custom-alert-modal.alert-info .modal-content {
+    background-color: #fff5f5; /* Стандартный фон */
+    border-color: #ffcccc;
+}
+
 @media (max-width: 768px) {
     .main {
         flex-direction: column;

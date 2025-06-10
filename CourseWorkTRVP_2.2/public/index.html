@@ -59,9 +59,9 @@
             <p>ОГРН: 1234567890123 | ИНН: 9876543210</p>
         </div>
         <div id="footer-links">
-            <a href="/terms">Условия использования</a>
-            <a href="/privacy">Политика конфиденциальности</a>
-            <a href="/faq">FAQ</a>
+            <a href="terms.html">Условия использования</a>
+            <a href="privacy.html">Политика конфиденциальности</a>
+            <a href="faq.html">FAQ</a>
         </div>
         <div id="footer-contact">
             <p>Поддержка: <a href="mailto:Quingogame@yandex.ru">Quingogame@yandex.ru</a></p>
@@ -146,6 +146,20 @@
                 <input type="text" id="roomCodeInput" placeholder="Введите код комнаты">
                 <button id="joinWithCodeBtn">Присоединиться</button>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для кастомного alert -->
+<div id="custom-alert-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="custom-alert-title">Уведомление</h2>
+            <button class="close-btn" onclick="closeCustomAlert()">×</button>
+        </div>
+        <div class="modal-body">
+            <p id="custom-alert-message"></p>
+            <button class="login-btn" onclick="closeCustomAlert()">ОК</button>
         </div>
     </div>
 </div>

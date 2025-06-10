@@ -62,6 +62,12 @@ header {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
+}
+
+#language-switcher:hover {
+    text-decoration: underline;
+    color: #6fcb52; /* Цвет, соответствующий вашему дизайну */
 }
 
 #language-switcher img {
@@ -407,6 +413,44 @@ footer {
     margin: 0.25rem 0;
 }
 
+/* Стили для кастомного alert */
+#custom-alert-modal .modal-content {
+    background: #f8c8c8; /* Фон, как в других модальных окнах */
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 350px; /* Меньше, чем другие модальные окна, для компактности */
+    margin: 10% auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#custom-alert-modal .modal-header h2 {
+    font-size: 1.2rem; /* Меньший шрифт для заголовка */
+    margin: 0;
+    color: #333;
+}
+
+#custom-alert-modal .modal-body p {
+    margin: 0 0 1rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+#custom-alert-modal .login-btn {
+    background-color: #6fcb52;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-family: 'MyFont', Arial, sans-serif;
+    font-size: 0.9rem;
+    width: 100px; /* Фиксированная ширина для компактности */
+}
+
+#custom-alert-modal .login-btn:hover {
+    background-color: #5ba647;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     #main-content {
@@ -516,5 +560,23 @@ footer {
     #social-links img {
         width: 20px;
         height: 20px;
+    }
+
+    #custom-alert-modal .modal-content {
+        width: 95%;
+        margin: 20% auto;
+    }
+
+    #custom-alert-modal .modal-header h2 {
+        font-size: 1rem;
+    }
+
+    #custom-alert-modal .modal-body p {
+        font-size: 0.8rem;
+    }
+
+    #custom-alert-modal .login-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
     }
 }

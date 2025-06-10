@@ -1,0 +1,868 @@
+[2025-05-31T15:42:35.864Z] [INFO] Игрок vika ответил правильно: score=2, roomCode=1XB4TT
+[2025-05-31T15:42:36.875Z] [INFO] Вопрос отправлен: roomCode=1XB4TT, questionIndex=2
+[2025-05-31T15:42:38.592Z] [INFO] Игрок vika ответил правильно: score=3, roomCode=1XB4TT
+[2025-05-31T15:42:39.619Z] [INFO] Игра завершена, статистика обновлена: roomCode=1XB4TT, sessionId=88
+[2025-05-31T15:42:39.620Z] [INFO] Комната готова к новой игре: roomCode=1XB4TT
+[2025-05-31T15:43:03.730Z] [INFO] Отправлено событие hostLeft: roomCode=1XB4TT, players=1
+[2025-05-31T15:43:03.741Z] [INFO] Комната удалена из базы данных: roomCode=1XB4TT, sessionId=86
+[2025-05-31T15:43:03.741Z] [INFO] Комната закрыта: roomCode=1XB4TT
+[2025-05-31T15:43:03.789Z] [INFO] Клиент отключился (socketId: VWRjBJcRxVFaC7jkAAAr)
+[2025-05-31T15:43:03.882Z] [INFO] Клиент подключился (socketId: Gx4k4_AvkdJA6oZiAAAv)
+[2025-05-31T15:43:03.890Z] [INFO] Отправлен список публичных комнат: socketId=Gx4k4_AvkdJA6oZiAAAv, rooms=0
+[2025-05-31T15:43:03.895Z] [INFO] Проверка аутентификации: userId=8, nickname=vika, gender=female
+[2025-05-31T15:43:06.177Z] [INFO] Клиент отключился (socketId: g0_A4vCagDKicAwsAAAt)
+[2025-05-31T15:43:06.308Z] [INFO] Клиент подключился (socketId: pne2bVShWTB2RTiBAAAx)
+[2025-05-31T15:43:06.329Z] [INFO] Отправлен список публичных комнат: socketId=pne2bVShWTB2RTiBAAAx, rooms=0
+[2025-05-31T15:43:06.330Z] [INFO] Проверка аутентификации: userId=6, nickname=maksim, gender=male
+[2025-05-31T15:43:07.555Z] [INFO] Клиент отключился (socketId: Gx4k4_AvkdJA6oZiAAAv)
+[2025-05-31T15:43:07.588Z] [INFO] Проверка аутентификации: userId=8, nickname=vika, gender=female
+[2025-05-31T15:43:25.593Z] [INFO] Клиент подключился (socketId: G79afulmT3RMpMz3AAAz)
+[2025-05-31T15:43:25.602Z] [INFO] Проверка аутентификации: userId=8, nickname=vika, gender=female
+[2025-05-31T15:43:25.607Z] [INFO] Отправлен список публичных комнат: socketId=G79afulmT3RMpMz3AAAz, rooms=0
+[2025-05-31T16:12:04.415Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-05-31T16:12:04.465Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-05-31T16:12:07.268Z] [INFO] Клиент подключился (socketId: Ej2Emr1HJYifR0LdAAAB)
+[2025-05-31T16:12:07.303Z] [INFO] Отправлен список публичных комнат: socketId=Ej2Emr1HJYifR0LdAAAB, rooms=0
+[2025-05-31T16:12:07.325Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-05-31T16:12:11.411Z] [INFO] Пользователь вошёл
+[2025-05-31T16:12:13.781Z] [INFO] Комната создана: roomCode=OT4U4O, creator=vika, sessionId=66, socketId=Ej2Emr1HJYifR0LdAAAB
+[2025-05-31T16:12:13.880Z] [INFO] Клиент отключился (socketId: Ej2Emr1HJYifR0LdAAAB)
+[2025-05-31T16:12:13.920Z] [INFO] Клиент подключился (socketId: PWytOIx7WaIbWtKdAAAD)
+[2025-05-31T16:12:13.942Z] [INFO] История чата отправлена: roomCode=OT4U4O, socketId=PWytOIx7WaIbWtKdAAAD
+[2025-05-31T16:12:13.945Z] [INFO] Игрок присоединился: roomCode=OT4U4O, name=vika, socketId=PWytOIx7WaIbWtKdAAAD, creatorName=vika, isHost=true
+[2025-05-31T16:13:15.713Z] [INFO] Статус приватности изменён: roomCode=OT4U4O, isPrivate=false
+[2025-05-31T16:13:20.010Z] [INFO] Клиент подключился (socketId: tRfMohw2ltE9dMw3AAAF)
+[2025-05-31T16:13:20.029Z] [INFO] Отправлен список публичных комнат: socketId=tRfMohw2ltE9dMw3AAAF, rooms=1
+[2025-05-31T16:13:20.046Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-05-31T16:13:30.106Z] [INFO] Пользователь вошёл
+[2025-05-31T16:14:26.333Z] [INFO] Игрок присоединился: roomCode=OT4U4O, name=loshka, socketId=tRfMohw2ltE9dMw3AAAF, creatorName=vika, isHost=false
+[2025-05-31T16:14:26.414Z] [INFO] Игрок покинул комнату: roomCode=OT4U4O, name=loshka, socketId=tRfMohw2ltE9dMw3AAAF
+[2025-05-31T16:14:26.414Z] [INFO] Клиент отключился (socketId: tRfMohw2ltE9dMw3AAAF)
+[2025-05-31T16:14:26.478Z] [INFO] Клиент подключился (socketId: aIq3Eoymy6P_hfhbAAAH)
+[2025-05-31T16:14:26.496Z] [INFO] История чата отправлена: roomCode=OT4U4O, socketId=aIq3Eoymy6P_hfhbAAAH
+[2025-05-31T16:14:26.502Z] [INFO] Игрок присоединился: roomCode=OT4U4O, name=loshka, socketId=aIq3Eoymy6P_hfhbAAAH, creatorName=vika, isHost=false
+[2025-05-31T16:15:28.053Z] [INFO] Игрок исключён из комнаты: roomCode=OT4U4O, player=loshka, playerId=aIq3Eoymy6P_hfhbAAAH
+[2025-05-31T16:15:37.470Z] [INFO] Клиент отключился (socketId: aIq3Eoymy6P_hfhbAAAH)
+[2025-05-31T16:15:37.545Z] [INFO] Клиент подключился (socketId: o1XrpcRzA7HbJ3ALAAAJ)
+[2025-05-31T16:15:37.561Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-05-31T16:15:37.632Z] [INFO] Отправлен список публичных комнат: socketId=o1XrpcRzA7HbJ3ALAAAJ, rooms=1
+[2025-05-31T16:16:22.156Z] [INFO] Игрок присоединился: roomCode=OT4U4O, name=loshka, socketId=o1XrpcRzA7HbJ3ALAAAJ, creatorName=vika, isHost=false
+[2025-05-31T16:16:22.236Z] [INFO] Игрок покинул комнату: roomCode=OT4U4O, name=loshka, socketId=o1XrpcRzA7HbJ3ALAAAJ
+[2025-05-31T16:16:22.236Z] [INFO] Клиент отключился (socketId: o1XrpcRzA7HbJ3ALAAAJ)
+[2025-05-31T16:16:22.278Z] [INFO] Клиент подключился (socketId: DfXKnmzWgQ4Ms6Y1AAAL)
+[2025-05-31T16:16:22.288Z] [INFO] История чата отправлена: roomCode=OT4U4O, socketId=DfXKnmzWgQ4Ms6Y1AAAL
+[2025-05-31T16:16:22.290Z] [INFO] Игрок присоединился: roomCode=OT4U4O, name=loshka, socketId=DfXKnmzWgQ4Ms6Y1AAAL, creatorName=vika, isHost=false
+[2025-05-31T16:16:29.261Z] [INFO] Сообщение в чате: roomCode=OT4U4O, name=loshka, message=Ты не прав!
+[2025-05-31T16:17:12.875Z] [INFO] Сообщение удалено: roomCode=OT4U4O, messageId=22375360-1a5b-447b-80c4-d0a2d45f05fb
+[2025-05-31T16:18:16.538Z] [INFO] Вопрос отправлен: roomCode=OT4U4O, questionIndex=0
+[2025-05-31T16:18:16.538Z] [INFO] Игра началась: roomCode=OT4U4O, questionCount=5
+[2025-05-31T16:18:47.921Z] [INFO] Игрок vika ответил правильно: score=1, roomCode=OT4U4O
+[2025-05-31T16:18:48.928Z] [INFO] Вопрос отправлен: roomCode=OT4U4O, questionIndex=1
+[2025-05-31T16:18:52.996Z] [INFO] Вопрос отправлен: roomCode=OT4U4O, questionIndex=2
+[2025-05-31T16:18:55.892Z] [INFO] Игрок vika ответил правильно: score=2, roomCode=OT4U4O
+[2025-05-31T16:18:56.901Z] [INFO] Вопрос отправлен: roomCode=OT4U4O, questionIndex=3
+[2025-05-31T16:19:01.199Z] [INFO] Игрок loshka ответил правильно: score=1, roomCode=OT4U4O
+[2025-05-31T16:19:02.214Z] [INFO] Вопрос отправлен: roomCode=OT4U4O, questionIndex=4
+[2025-05-31T16:19:05.553Z] [INFO] Игрок vika ответил правильно: score=3, roomCode=OT4U4O
+[2025-05-31T16:19:06.576Z] [INFO] Игра завершена, статистика обновлена: roomCode=OT4U4O, sessionId=67
+[2025-05-31T16:19:06.577Z] [INFO] Комната готова к новой игре: roomCode=OT4U4O
+[2025-05-31T16:19:51.816Z] [INFO] Вопрос отправлен: roomCode=OT4U4O, questionIndex=0
+[2025-05-31T16:19:51.816Z] [INFO] Игра началась: roomCode=OT4U4O, questionCount=5
+[2025-05-31T16:19:57.084Z] [INFO] Отправлено событие hostLeft: roomCode=OT4U4O, players=1
+[2025-05-31T16:19:57.093Z] [INFO] Комната удалена из базы данных: roomCode=OT4U4O, sessionId=66
+[2025-05-31T16:19:57.093Z] [INFO] Комната закрыта: roomCode=OT4U4O
+[2025-05-31T16:19:57.172Z] [INFO] Клиент отключился (socketId: PWytOIx7WaIbWtKdAAAD)
+[2025-05-31T16:19:57.199Z] [INFO] Клиент подключился (socketId: rQ9FTxWpsU33KlMJAAAN)
+[2025-05-31T16:19:57.217Z] [INFO] Отправлен список публичных комнат: socketId=rQ9FTxWpsU33KlMJAAAN, rooms=0
+[2025-05-31T16:19:57.230Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-05-31T16:20:07.207Z] [INFO] Клиент отключился (socketId: DfXKnmzWgQ4Ms6Y1AAAL)
+[2025-05-31T16:20:07.256Z] [INFO] Клиент подключился (socketId: qP3RNoZCCUuHJUOmAAAP)
+[2025-05-31T16:20:07.271Z] [INFO] Отправлен список публичных комнат: socketId=qP3RNoZCCUuHJUOmAAAP, rooms=0
+[2025-05-31T16:20:07.289Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-05-31T16:20:46.685Z] [INFO] Клиент отключился (socketId: qP3RNoZCCUuHJUOmAAAP)
+[2025-05-31T16:20:46.756Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-05-31T16:22:02.096Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-05-31T16:22:02.109Z] [INFO] Клиент отключился (socketId: rQ9FTxWpsU33KlMJAAAN)
+[2025-05-31T16:22:05.125Z] [INFO] Клиент подключился (socketId: 4v-zt9E5oW0m0SKAAAAR)
+[2025-05-31T16:22:05.149Z] [INFO] Отправлен список публичных комнат: socketId=4v-zt9E5oW0m0SKAAAAR, rooms=0
+[2025-05-31T16:22:05.151Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-05-31T16:22:06.305Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-05-31T16:22:06.319Z] [INFO] Клиент отключился (socketId: 4v-zt9E5oW0m0SKAAAAR)
+[2025-05-31T16:22:08.464Z] [INFO] Клиент подключился (socketId: 1SivosVbARLtRT1GAAAT)
+[2025-05-31T16:22:08.473Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-05-31T16:22:08.479Z] [INFO] Отправлен список публичных комнат: socketId=1SivosVbARLtRT1GAAAT, rooms=0
+[2025-05-31T16:22:10.038Z] [INFO] Клиент отключился (socketId: 1SivosVbARLtRT1GAAAT)
+[2025-05-31T16:22:10.100Z] [INFO] Клиент подключился (socketId: zpI8iQEjPv91dbowAAAV)
+[2025-05-31T16:22:10.104Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-05-31T16:22:10.164Z] [INFO] Отправлен список публичных комнат: socketId=zpI8iQEjPv91dbowAAAV, rooms=0
+[2025-05-31T16:22:11.864Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-05-31T16:22:11.882Z] [INFO] Клиент отключился (socketId: zpI8iQEjPv91dbowAAAV)
+[2025-05-31T16:23:30.759Z] [INFO] Клиент подключился (socketId: yDrHxVhU7jmrlea8AAAX)
+[2025-05-31T16:23:30.802Z] [INFO] Отправлен список публичных комнат: socketId=yDrHxVhU7jmrlea8AAAX, rooms=0
+[2025-05-31T16:23:30.804Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-05-31T16:23:32.039Z] [INFO] Комната создана: roomCode=F28KWT, creator=vika, sessionId=68, socketId=yDrHxVhU7jmrlea8AAAX
+[2025-05-31T16:23:32.122Z] [INFO] Клиент подключился (socketId: Einc57bIf60vKDAWAAAZ)
+[2025-05-31T16:23:32.128Z] [INFO] Клиент отключился (socketId: yDrHxVhU7jmrlea8AAAX)
+[2025-05-31T16:23:32.158Z] [INFO] История чата отправлена: roomCode=F28KWT, socketId=Einc57bIf60vKDAWAAAZ
+[2025-05-31T16:23:32.160Z] [INFO] Игрок присоединился: roomCode=F28KWT, name=vika, socketId=Einc57bIf60vKDAWAAAZ, creatorName=vika, isHost=true
+[2025-05-31T16:24:07.851Z] [INFO] Отправлено событие hostLeft: roomCode=F28KWT, players=0
+[2025-05-31T16:24:07.864Z] [INFO] Комната удалена из базы данных: roomCode=F28KWT, sessionId=68
+[2025-05-31T16:24:07.864Z] [INFO] Комната закрыта: roomCode=F28KWT
+[2025-05-31T16:24:07.947Z] [INFO] Клиент подключился (socketId: 0MSgbFgr4Q0bsm38AAAb)
+[2025-05-31T16:24:07.949Z] [INFO] Клиент отключился (socketId: Einc57bIf60vKDAWAAAZ)
+[2025-05-31T16:24:07.959Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-05-31T16:24:07.970Z] [INFO] Отправлен список публичных комнат: socketId=0MSgbFgr4Q0bsm38AAAb, rooms=0
+[2025-05-31T16:24:09.231Z] [INFO] Пользователь вышел
+[2025-05-31T16:24:09.264Z] [INFO] Клиент отключился (socketId: 0MSgbFgr4Q0bsm38AAAb)
+[2025-05-31T16:24:09.292Z] [INFO] Клиент подключился (socketId: IGEx-0AJpILCy4tfAAAd)
+[2025-05-31T16:24:09.315Z] [INFO] Отправлен список публичных комнат: socketId=IGEx-0AJpILCy4tfAAAd, rooms=0
+[2025-05-31T16:24:09.316Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-05-31T16:25:36.193Z] [INFO] Клиент отключился (socketId: IGEx-0AJpILCy4tfAAAd)
+[2025-05-31T19:24:31.118Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-05-31T19:24:31.197Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-03T11:50:50.266Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-03T11:50:50.513Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-03T11:51:01.005Z] [INFO] Клиент подключился (socketId: qFFtAAicPsP5HTxZAAAB)
+[2025-06-03T11:51:01.032Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-03T11:51:01.070Z] [INFO] Отправлен список публичных комнат: socketId=qFFtAAicPsP5HTxZAAAB, rooms=0
+[2025-06-03T11:51:08.764Z] [INFO] Пользователь вошёл
+[2025-06-03T11:51:13.820Z] [INFO] Клиент отключился (socketId: qFFtAAicPsP5HTxZAAAB)
+[2025-06-03T11:51:13.880Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-03T11:51:24.383Z] [INFO] Клиент подключился (socketId: S2kxGN9ndI68kVvAAAAD)
+[2025-06-03T11:51:24.401Z] [INFO] Отправлен список публичных комнат: socketId=S2kxGN9ndI68kVvAAAAD, rooms=0
+[2025-06-03T11:51:24.483Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-03T11:51:32.709Z] [INFO] Клиент отключился (socketId: S2kxGN9ndI68kVvAAAAD)
+[2025-06-03T11:51:32.862Z] [INFO] Клиент подключился (socketId: uqMD_LyFe6bAXuwdAAAF)
+[2025-06-03T11:51:32.889Z] [INFO] Отправлен список публичных комнат: socketId=uqMD_LyFe6bAXuwdAAAF, rooms=0
+[2025-06-03T11:51:32.894Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-03T11:51:34.772Z] [INFO] Клиент отключился (socketId: uqMD_LyFe6bAXuwdAAAF)
+[2025-06-03T11:51:34.832Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-03T11:51:38.899Z] [INFO] Клиент подключился (socketId: I4S_Oj5CI6k1WzZqAAAH)
+[2025-06-03T11:51:38.902Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-03T11:51:38.920Z] [INFO] Отправлен список публичных комнат: socketId=I4S_Oj5CI6k1WzZqAAAH, rooms=0
+[2025-06-03T11:51:41.048Z] [INFO] Комната создана: roomCode=73NZLI, creator=loshka, sessionId=69, socketId=I4S_Oj5CI6k1WzZqAAAH
+[2025-06-03T11:51:41.159Z] [INFO] Клиент отключился (socketId: I4S_Oj5CI6k1WzZqAAAH)
+[2025-06-03T11:51:41.238Z] [INFO] Клиент подключился (socketId: kQJoKVwwwnklWO1RAAAJ)
+[2025-06-03T11:51:41.265Z] [INFO] История чата отправлена: roomCode=73NZLI, socketId=kQJoKVwwwnklWO1RAAAJ
+[2025-06-03T11:51:41.272Z] [INFO] Игрок присоединился: roomCode=73NZLI, name=loshka, socketId=kQJoKVwwwnklWO1RAAAJ, creatorName=loshka, isHost=true
+[2025-06-03T11:51:48.321Z] [INFO] Отправлено событие hostLeft: roomCode=73NZLI, players=0
+[2025-06-03T11:51:48.334Z] [INFO] Комната удалена из базы данных: roomCode=73NZLI, sessionId=69
+[2025-06-03T11:51:48.334Z] [INFO] Комната закрыта: roomCode=73NZLI
+[2025-06-03T11:51:48.419Z] [INFO] Клиент отключился (socketId: kQJoKVwwwnklWO1RAAAJ)
+[2025-06-03T11:51:48.500Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-03T11:51:48.505Z] [INFO] Клиент подключился (socketId: eJOwwjbAqjHfJIUjAAAL)
+[2025-06-03T11:51:48.518Z] [INFO] Отправлен список публичных комнат: socketId=eJOwwjbAqjHfJIUjAAAL, rooms=0
+[2025-06-03T11:51:51.274Z] [INFO] Пользователь вышел
+[2025-06-03T11:51:51.346Z] [INFO] Клиент отключился (socketId: eJOwwjbAqjHfJIUjAAAL)
+[2025-06-03T11:51:51.504Z] [INFO] Клиент подключился (socketId: JC33SRmNjeLTFSxaAAAN)
+[2025-06-03T11:51:51.522Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-03T11:51:51.532Z] [INFO] Отправлен список публичных комнат: socketId=JC33SRmNjeLTFSxaAAAN, rooms=0
+[2025-06-03T11:51:57.379Z] [INFO] Клиент отключился (socketId: JC33SRmNjeLTFSxaAAAN)
+[2025-06-03T11:51:57.565Z] [INFO] Клиент подключился (socketId: VuqucQozADos6HdMAAAP)
+[2025-06-03T11:51:57.579Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-03T11:51:57.585Z] [INFO] Отправлен список публичных комнат: socketId=VuqucQozADos6HdMAAAP, rooms=0
+[2025-06-03T11:52:04.525Z] [INFO] Клиент отключился (socketId: VuqucQozADos6HdMAAAP)
+[2025-06-03T11:52:04.699Z] [INFO] Клиент подключился (socketId: CLDp4KdaN2JTYxCBAAAR)
+[2025-06-03T11:52:04.712Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-03T11:52:04.720Z] [INFO] Отправлен список публичных комнат: socketId=CLDp4KdaN2JTYxCBAAAR, rooms=0
+[2025-06-03T11:52:11.181Z] [INFO] Клиент отключился (socketId: CLDp4KdaN2JTYxCBAAAR)
+[2025-06-03T11:52:11.350Z] [INFO] Клиент подключился (socketId: D20W9Djrl4eWWm-LAAAT)
+[2025-06-03T11:52:11.412Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-03T11:52:11.418Z] [INFO] Отправлен список публичных комнат: socketId=D20W9Djrl4eWWm-LAAAT, rooms=0
+[2025-06-03T11:53:22.403Z] [INFO] Пользователь вошёл
+[2025-06-03T11:53:36.942Z] [INFO] Клиент отключился (socketId: D20W9Djrl4eWWm-LAAAT)
+[2025-06-03T11:53:39.634Z] [INFO] Клиент подключился (socketId: RfOfmPuZo0zwsSqNAAAV)
+[2025-06-03T11:53:39.759Z] [INFO] Отправлен список публичных комнат: socketId=RfOfmPuZo0zwsSqNAAAV, rooms=0
+[2025-06-03T11:53:50.856Z] [INFO] Пользователь вошёл
+[2025-06-03T11:53:56.799Z] [INFO] Клиент отключился (socketId: RfOfmPuZo0zwsSqNAAAV)
+[2025-06-03T11:53:56.851Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-03T11:53:59.945Z] [INFO] Клиент подключился (socketId: x_atlab_vNMcVHKWAAAX)
+[2025-06-03T11:53:59.968Z] [INFO] Отправлен список публичных комнат: socketId=x_atlab_vNMcVHKWAAAX, rooms=0
+[2025-06-03T11:53:59.969Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-03T11:54:26.051Z] [INFO] Клиент отключился (socketId: x_atlab_vNMcVHKWAAAX)
+[2025-06-03T11:54:26.094Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-03T11:54:34.918Z] [INFO] Клиент подключился (socketId: 2Ed9nfhhBLJP2pYgAAAZ)
+[2025-06-03T11:54:34.944Z] [INFO] Отправлен список публичных комнат: socketId=2Ed9nfhhBLJP2pYgAAAZ, rooms=0
+[2025-06-03T11:54:34.945Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-03T11:54:36.069Z] [INFO] Пользователь вышел
+[2025-06-03T11:54:36.134Z] [INFO] Клиент отключился (socketId: 2Ed9nfhhBLJP2pYgAAAZ)
+[2025-06-03T11:54:36.308Z] [INFO] Клиент подключился (socketId: hLJuzpJiL_Z23pW7AAAb)
+[2025-06-03T11:54:36.324Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-03T11:54:36.333Z] [INFO] Отправлен список публичных комнат: socketId=hLJuzpJiL_Z23pW7AAAb, rooms=0
+[2025-06-03T11:54:41.572Z] [INFO] Пользователь вошёл
+[2025-06-03T11:54:45.731Z] [INFO] Клиент отключился (socketId: hLJuzpJiL_Z23pW7AAAb)
+[2025-06-03T11:54:45.787Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-03T11:54:51.713Z] [INFO] Клиент подключился (socketId: _u0T-HveiYr6bQYJAAAd)
+[2025-06-03T11:54:51.717Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-03T11:54:51.803Z] [INFO] Отправлен список публичных комнат: socketId=_u0T-HveiYr6bQYJAAAd, rooms=0
+[2025-06-03T11:54:56.019Z] [INFO] Комната создана: roomCode=U2H4MQ, creator=vika, sessionId=70, socketId=_u0T-HveiYr6bQYJAAAd
+[2025-06-03T11:54:56.109Z] [INFO] Клиент отключился (socketId: _u0T-HveiYr6bQYJAAAd)
+[2025-06-03T11:54:56.189Z] [INFO] Клиент подключился (socketId: xYxzowfhJVzsVNKkAAAf)
+[2025-06-03T11:54:56.210Z] [INFO] История чата отправлена: roomCode=U2H4MQ, socketId=xYxzowfhJVzsVNKkAAAf
+[2025-06-03T11:54:56.214Z] [INFO] Игрок присоединился: roomCode=U2H4MQ, name=vika, socketId=xYxzowfhJVzsVNKkAAAf, creatorName=vika, isHost=true
+[2025-06-03T11:55:05.800Z] [INFO] Сообщение в чате: roomCode=U2H4MQ, name=vika, message=beebt
+[2025-06-03T11:55:18.680Z] [INFO] Сообщение удалено: roomCode=U2H4MQ, messageId=45f696db-13b7-49e5-b1e1-102394965ea8
+[2025-06-03T11:55:45.807Z] [INFO] Отправлено событие hostLeft: roomCode=U2H4MQ, players=0
+[2025-06-03T11:55:45.840Z] [INFO] Комната удалена из базы данных: roomCode=U2H4MQ, sessionId=70
+[2025-06-03T11:55:45.841Z] [INFO] Комната закрыта: roomCode=U2H4MQ
+[2025-06-03T11:55:45.907Z] [INFO] Клиент отключился (socketId: xYxzowfhJVzsVNKkAAAf)
+[2025-06-03T11:55:46.002Z] [INFO] Клиент подключился (socketId: VFP7F6KpmCrzpYY_AAAh)
+[2025-06-03T11:55:46.017Z] [INFO] Отправлен список публичных комнат: socketId=VFP7F6KpmCrzpYY_AAAh, rooms=0
+[2025-06-03T11:55:46.018Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-03T11:56:03.148Z] [INFO] Клиент отключился (socketId: VFP7F6KpmCrzpYY_AAAh)
+[2025-06-03T11:56:03.187Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-03T11:56:17.663Z] [INFO] Клиент подключился (socketId: 0jeTGzMGu7rYGuZ2AAAj)
+[2025-06-03T11:56:17.801Z] [INFO] Отправлен список публичных комнат: socketId=0jeTGzMGu7rYGuZ2AAAj, rooms=0
+[2025-06-03T11:56:17.818Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-03T11:56:21.123Z] [INFO] Комната создана: roomCode=D5HB1K, creator=vika, sessionId=71, socketId=0jeTGzMGu7rYGuZ2AAAj
+[2025-06-03T11:56:21.233Z] [INFO] Клиент отключился (socketId: 0jeTGzMGu7rYGuZ2AAAj)
+[2025-06-03T11:56:21.293Z] [INFO] Клиент подключился (socketId: b_kAT6c-A1hUTz-cAAAl)
+[2025-06-03T11:56:21.311Z] [INFO] История чата отправлена: roomCode=D5HB1K, socketId=b_kAT6c-A1hUTz-cAAAl
+[2025-06-03T11:56:21.317Z] [INFO] Игрок присоединился: roomCode=D5HB1K, name=vika, socketId=b_kAT6c-A1hUTz-cAAAl, creatorName=vika, isHost=true
+[2025-06-03T11:56:32.937Z] [INFO] Сообщение в чате: roomCode=D5HB1K, name=vika, message=Hello
+[2025-06-03T11:56:42.616Z] [INFO] Отправлено событие hostLeft: roomCode=D5HB1K, players=0
+[2025-06-03T11:56:42.628Z] [INFO] Комната удалена из базы данных: roomCode=D5HB1K, sessionId=71
+[2025-06-03T11:56:42.628Z] [INFO] Комната закрыта: roomCode=D5HB1K
+[2025-06-03T11:56:42.699Z] [INFO] Клиент отключился (socketId: b_kAT6c-A1hUTz-cAAAl)
+[2025-06-03T11:56:42.754Z] [INFO] Клиент подключился (socketId: 8tlnVROYKSXSlMIWAAAn)
+[2025-06-03T11:56:42.785Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-03T11:56:42.864Z] [INFO] Отправлен список публичных комнат: socketId=8tlnVROYKSXSlMIWAAAn, rooms=0
+[2025-06-03T11:56:53.189Z] [INFO] Клиент отключился (socketId: 8tlnVROYKSXSlMIWAAAn)
+[2025-06-06T09:46:37.550Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-06T09:46:37.844Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-06T09:46:43.455Z] [INFO] Клиент подключился (socketId: DXYXXIp2G__rI4NFAAAB)
+[2025-06-06T09:46:43.577Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-06T09:46:43.711Z] [INFO] Отправлен список публичных комнат: socketId=DXYXXIp2G__rI4NFAAAB, rooms=0
+[2025-06-06T09:46:48.241Z] [INFO] Клиент отключился (socketId: DXYXXIp2G__rI4NFAAAB)
+[2025-06-06T09:46:48.372Z] [INFO] Клиент подключился (socketId: ed8kJwLCWAXQs1JsAAAD)
+[2025-06-06T09:46:48.414Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-06T09:46:48.486Z] [INFO] Отправлен список публичных комнат: socketId=ed8kJwLCWAXQs1JsAAAD, rooms=0
+[2025-06-06T09:47:05.837Z] [INFO] Клиент подключился (socketId: 04HFoiRSqpbYfpyiAAAF)
+[2025-06-06T09:47:05.875Z] [INFO] Отправлен список публичных комнат: socketId=04HFoiRSqpbYfpyiAAAF, rooms=0
+[2025-06-06T09:47:05.899Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-06T10:05:40.840Z] [INFO] Пользователь вошёл
+[2025-06-06T10:05:48.197Z] [INFO] Клиент отключился (socketId: 04HFoiRSqpbYfpyiAAAF)
+[2025-06-06T10:05:48.338Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-06T10:05:50.080Z] [INFO] Клиент подключился (socketId: yRB2P0HY610VKvjDAAAH)
+[2025-06-06T10:05:50.117Z] [INFO] Отправлен список публичных комнат: socketId=yRB2P0HY610VKvjDAAAH, rooms=0
+[2025-06-06T10:05:50.133Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-06T10:05:51.429Z] [INFO] Клиент отключился (socketId: yRB2P0HY610VKvjDAAAH)
+[2025-06-06T10:05:51.472Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-06T10:05:56.622Z] [INFO] Клиент подключился (socketId: W1Qakr8KInkKX-AyAAAJ)
+[2025-06-06T10:05:56.743Z] [INFO] Отправлен список публичных комнат: socketId=W1Qakr8KInkKX-AyAAAJ, rooms=0
+[2025-06-06T10:05:56.759Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-06T10:05:58.581Z] [INFO] Клиент отключился (socketId: W1Qakr8KInkKX-AyAAAJ)
+[2025-06-06T10:05:58.864Z] [INFO] Клиент подключился (socketId: tq60sv19tFXUxPKlAAAL)
+[2025-06-06T10:05:58.905Z] [INFO] Отправлен список публичных комнат: socketId=tq60sv19tFXUxPKlAAAL, rooms=0
+[2025-06-06T10:05:58.925Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-06T10:06:01.593Z] [INFO] Клиент отключился (socketId: tq60sv19tFXUxPKlAAAL)
+[2025-06-06T10:06:01.832Z] [INFO] Клиент подключился (socketId: WIFDkUywaxMkFO6_AAAN)
+[2025-06-06T10:06:01.862Z] [INFO] Отправлен список публичных комнат: socketId=WIFDkUywaxMkFO6_AAAN, rooms=0
+[2025-06-06T10:06:01.864Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-06T10:06:03.411Z] [INFO] Пользователь вышел
+[2025-06-06T10:06:03.492Z] [INFO] Клиент отключился (socketId: WIFDkUywaxMkFO6_AAAN)
+[2025-06-06T10:06:03.695Z] [INFO] Клиент подключился (socketId: AX4stbpUNmOOZn23AAAP)
+[2025-06-06T10:06:03.718Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-06T10:06:03.738Z] [INFO] Отправлен список публичных комнат: socketId=AX4stbpUNmOOZn23AAAP, rooms=0
+[2025-06-06T10:18:27.232Z] [INFO] Клиент отключился (socketId: AX4stbpUNmOOZn23AAAP)
+[2025-06-06T10:18:27.449Z] [INFO] Клиент подключился (socketId: z2Gb6GWN5DEL3Ig8AAAR)
+[2025-06-06T10:18:27.542Z] [INFO] Отправлен список публичных комнат: socketId=z2Gb6GWN5DEL3Ig8AAAR, rooms=0
+[2025-06-06T10:18:27.543Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-06T10:18:30.373Z] [INFO] Клиент отключился (socketId: z2Gb6GWN5DEL3Ig8AAAR)
+[2025-06-06T10:18:30.602Z] [INFO] Клиент подключился (socketId: nJBYI-7OjLH6rEViAAAT)
+[2025-06-06T10:18:30.628Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-06T10:18:30.644Z] [INFO] Отправлен список публичных комнат: socketId=nJBYI-7OjLH6rEViAAAT, rooms=0
+[2025-06-06T10:18:32.675Z] [INFO] Клиент отключился (socketId: nJBYI-7OjLH6rEViAAAT)
+[2025-06-06T10:18:32.926Z] [INFO] Клиент подключился (socketId: f21sueh-YqwAdR5YAAAV)
+[2025-06-06T10:18:32.958Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-06T10:18:32.970Z] [INFO] Отправлен список публичных комнат: socketId=f21sueh-YqwAdR5YAAAV, rooms=0
+[2025-06-06T10:18:44.051Z] [INFO] Клиент отключился (socketId: f21sueh-YqwAdR5YAAAV)
+[2025-06-06T10:18:44.256Z] [INFO] Клиент подключился (socketId: 2qB_x5-M2oEP-fbzAAAX)
+[2025-06-06T10:18:44.283Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-06T10:18:44.290Z] [INFO] Отправлен список публичных комнат: socketId=2qB_x5-M2oEP-fbzAAAX, rooms=0
+[2025-06-06T10:46:23.160Z] [INFO] Пользователь зарегистрирован и вошёл
+[2025-06-06T10:46:28.696Z] [INFO] Клиент отключился (socketId: 2qB_x5-M2oEP-fbzAAAX)
+[2025-06-06T10:46:28.790Z] [INFO] Проверка аутентификации: userId=16, nickname=polip, gender=female
+[2025-06-06T10:46:32.844Z] [INFO] Клиент подключился (socketId: ImhYddEwwtF_-TwEAAAZ)
+[2025-06-06T10:46:32.983Z] [INFO] Отправлен список публичных комнат: socketId=ImhYddEwwtF_-TwEAAAZ, rooms=0
+[2025-06-06T10:46:33.015Z] [INFO] Проверка аутентификации: userId=16, nickname=polip, gender=female
+[2025-06-06T10:46:57.751Z] [INFO] Клиент отключился (socketId: ImhYddEwwtF_-TwEAAAZ)
+[2025-06-06T10:46:57.797Z] [INFO] Проверка аутентификации: userId=16, nickname=polip, gender=female
+[2025-06-06T10:47:13.486Z] [INFO] Клиент подключился (socketId: QLUSioQpEZ4fj2rlAAAb)
+[2025-06-06T10:47:13.628Z] [INFO] Отправлен список публичных комнат: socketId=QLUSioQpEZ4fj2rlAAAb, rooms=0
+[2025-06-06T10:47:13.646Z] [INFO] Проверка аутентификации: userId=16, nickname=polip, gender=female
+[2025-06-06T10:50:31.038Z] [INFO] Комната создана: roomCode=G40OEK, creator=polip, sessionId=72, socketId=QLUSioQpEZ4fj2rlAAAb
+[2025-06-06T10:50:31.188Z] [INFO] Клиент отключился (socketId: QLUSioQpEZ4fj2rlAAAb)
+[2025-06-06T10:50:31.294Z] [INFO] Клиент подключился (socketId: vagKOg4fkAUzlS3oAAAd)
+[2025-06-06T10:50:31.349Z] [INFO] История чата отправлена: roomCode=G40OEK, socketId=vagKOg4fkAUzlS3oAAAd
+[2025-06-06T10:50:31.357Z] [INFO] Игрок присоединился: roomCode=G40OEK, name=polip, socketId=vagKOg4fkAUzlS3oAAAd, creatorName=polip, isHost=true
+[2025-06-06T10:50:42.390Z] [INFO] Сообщение в чате: roomCode=G40OEK, name=polip, message=hkgrhgho
+[2025-06-06T10:50:45.277Z] [INFO] Сообщение удалено: roomCode=G40OEK, messageId=ed3f66e8-67b7-4136-ad5f-06f73f6a22a3
+[2025-06-06T10:50:52.466Z] [INFO] Отправлено событие hostLeft: roomCode=G40OEK, players=0
+[2025-06-06T10:50:52.551Z] [INFO] Комната удалена из базы данных: roomCode=G40OEK, sessionId=72
+[2025-06-06T10:50:52.552Z] [INFO] Комната закрыта: roomCode=G40OEK
+[2025-06-06T10:50:52.639Z] [INFO] Клиент отключился (socketId: vagKOg4fkAUzlS3oAAAd)
+[2025-06-06T10:50:52.783Z] [INFO] Клиент подключился (socketId: iPNsLRCM0kZ5DujDAAAf)
+[2025-06-06T10:50:52.945Z] [INFO] Отправлен список публичных комнат: socketId=iPNsLRCM0kZ5DujDAAAf, rooms=0
+[2025-06-06T10:50:52.984Z] [INFO] Проверка аутентификации: userId=16, nickname=polip, gender=female
+[2025-06-06T10:51:16.832Z] [INFO] Клиент отключился (socketId: iPNsLRCM0kZ5DujDAAAf)
+[2025-06-06T10:51:16.899Z] [INFO] Проверка аутентификации: userId=16, nickname=polip, gender=female
+[2025-06-06T10:51:20.736Z] [INFO] Клиент подключился (socketId: uhk7NK4qHkNNY7zzAAAh)
+[2025-06-06T10:51:20.777Z] [INFO] Отправлен список публичных комнат: socketId=uhk7NK4qHkNNY7zzAAAh, rooms=0
+[2025-06-06T10:51:20.869Z] [INFO] Проверка аутентификации: userId=16, nickname=polip, gender=female
+[2025-06-06T10:51:22.734Z] [INFO] Клиент отключился (socketId: uhk7NK4qHkNNY7zzAAAh)
+[2025-06-06T10:51:22.932Z] [INFO] Клиент подключился (socketId: WPxGURMDva5wSyawAAAj)
+[2025-06-06T10:51:23.014Z] [INFO] Отправлен список публичных комнат: socketId=WPxGURMDva5wSyawAAAj, rooms=0
+[2025-06-06T10:51:23.027Z] [INFO] Проверка аутентификации: userId=16, nickname=polip, gender=female
+[2025-06-06T10:51:24.883Z] [INFO] Клиент отключился (socketId: WPxGURMDva5wSyawAAAj)
+[2025-06-06T10:51:25.098Z] [INFO] Клиент подключился (socketId: jGQMz4TwG0YVMvFJAAAl)
+[2025-06-06T10:51:25.127Z] [INFO] Проверка аутентификации: userId=16, nickname=polip, gender=female
+[2025-06-06T10:51:25.138Z] [INFO] Отправлен список публичных комнат: socketId=jGQMz4TwG0YVMvFJAAAl, rooms=0
+[2025-06-06T10:58:06.894Z] [INFO] Клиент отключился (socketId: ed8kJwLCWAXQs1JsAAAD)
+[2025-06-10T16:37:20.776Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-10T16:37:20.933Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-10T16:37:23.787Z] [INFO] Клиент подключился (socketId: E0Xy4Mz2klFy2a43AAAB)
+[2025-06-10T16:37:23.902Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:37:24.008Z] [INFO] Отправлен список публичных комнат: socketId=E0Xy4Mz2klFy2a43AAAB, rooms=0
+[2025-06-10T16:37:25.742Z] [INFO] Клиент отключился (socketId: E0Xy4Mz2klFy2a43AAAB)
+[2025-06-10T16:37:29.305Z] [INFO] Клиент подключился (socketId: 2_-T8xqH_Y4Fod2KAAAD)
+[2025-06-10T16:37:29.314Z] [INFO] Отправлен список публичных комнат: socketId=2_-T8xqH_Y4Fod2KAAAD, rooms=0
+[2025-06-10T16:37:30.980Z] [INFO] Клиент отключился (socketId: 2_-T8xqH_Y4Fod2KAAAD)
+[2025-06-10T16:37:34.545Z] [INFO] Клиент подключился (socketId: wPvYCY9NTVEH1Sj4AAAF)
+[2025-06-10T16:37:34.553Z] [INFO] Отправлен список публичных комнат: socketId=wPvYCY9NTVEH1Sj4AAAF, rooms=0
+[2025-06-10T16:41:33.577Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-10T16:41:33.624Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-10T16:41:35.475Z] [INFO] Клиент подключился (socketId: XyKCEGDYNGnIRYrNAAAB)
+[2025-06-10T16:41:35.521Z] [INFO] Отправлен список публичных комнат: socketId=XyKCEGDYNGnIRYrNAAAB, rooms=0
+[2025-06-10T16:41:35.552Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:41:38.014Z] [INFO] Клиент отключился (socketId: XyKCEGDYNGnIRYrNAAAB)
+[2025-06-10T16:44:14.377Z] [INFO] Клиент подключился (socketId: 5TNKhEfEIV9DgDxqAAAD)
+[2025-06-10T16:44:14.397Z] [INFO] Отправлен список публичных комнат: socketId=5TNKhEfEIV9DgDxqAAAD, rooms=0
+[2025-06-10T16:44:17.314Z] [INFO] Клиент отключился (socketId: 5TNKhEfEIV9DgDxqAAAD)
+[2025-06-10T16:44:19.875Z] [INFO] Клиент подключился (socketId: njYKLryNGopaUSffAAAF)
+[2025-06-10T16:44:19.885Z] [INFO] Отправлен список публичных комнат: socketId=njYKLryNGopaUSffAAAF, rooms=0
+[2025-06-10T16:45:11.640Z] [INFO] Клиент отключился (socketId: njYKLryNGopaUSffAAAF)
+[2025-06-10T16:46:19.165Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-10T16:46:19.216Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-10T16:46:20.856Z] [INFO] Клиент подключился (socketId: UP0XfwCbz_LZRHTrAAAB)
+[2025-06-10T16:46:20.927Z] [INFO] Отправлен список публичных комнат: socketId=UP0XfwCbz_LZRHTrAAAB, rooms=0
+[2025-06-10T16:46:20.940Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:46:22.969Z] [INFO] Клиент отключился (socketId: UP0XfwCbz_LZRHTrAAAB)
+[2025-06-10T16:46:25.542Z] [INFO] Клиент подключился (socketId: oR1KeUCUtIov3MkAAAAD)
+[2025-06-10T16:46:25.550Z] [INFO] Отправлен список публичных комнат: socketId=oR1KeUCUtIov3MkAAAAD, rooms=0
+[2025-06-10T16:46:27.228Z] [INFO] Клиент отключился (socketId: oR1KeUCUtIov3MkAAAAD)
+[2025-06-10T16:46:30.837Z] [INFO] Клиент подключился (socketId: 8zKFUMGffbkd_g-4AAAF)
+[2025-06-10T16:46:30.844Z] [INFO] Отправлен список публичных комнат: socketId=8zKFUMGffbkd_g-4AAAF, rooms=0
+[2025-06-10T16:46:35.672Z] [INFO] Пользователь вошёл
+[2025-06-10T16:46:36.641Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:46:36.674Z] [INFO] Клиент отключился (socketId: 8zKFUMGffbkd_g-4AAAF)
+[2025-06-10T16:46:41.699Z] [INFO] Клиент подключился (socketId: 1RFb7H1G5UoXHzS_AAAH)
+[2025-06-10T16:46:41.733Z] [INFO] Отправлен список публичных комнат: socketId=1RFb7H1G5UoXHzS_AAAH, rooms=0
+[2025-06-10T16:46:43.383Z] [INFO] Пользователь вышел
+[2025-06-10T16:46:43.414Z] [INFO] Клиент отключился (socketId: 1RFb7H1G5UoXHzS_AAAH)
+[2025-06-10T16:46:43.469Z] [INFO] Клиент подключился (socketId: 8gSDDBatGBKFjFV8AAAJ)
+[2025-06-10T16:46:43.472Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:46:43.479Z] [INFO] Отправлен список публичных комнат: socketId=8gSDDBatGBKFjFV8AAAJ, rooms=0
+[2025-06-10T16:54:14.151Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-10T16:54:14.190Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-10T16:54:23.426Z] [INFO] Клиент подключился (socketId: -Uoc4eUVYvwPJI7eAAAB)
+[2025-06-10T16:54:23.442Z] [INFO] Отправлен список публичных комнат: socketId=-Uoc4eUVYvwPJI7eAAAB, rooms=0
+[2025-06-10T16:54:23.451Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:54:26.142Z] [INFO] Клиент отключился (socketId: -Uoc4eUVYvwPJI7eAAAB)
+[2025-06-10T16:54:35.824Z] [INFO] Клиент подключился (socketId: NOgbJY2uPfZytzfAAAAD)
+[2025-06-10T16:54:35.835Z] [INFO] Отправлен список публичных комнат: socketId=NOgbJY2uPfZytzfAAAAD, rooms=0
+[2025-06-10T16:54:39.291Z] [INFO] Пользователь вошёл
+[2025-06-10T16:54:40.026Z] [INFO] Клиент отключился (socketId: NOgbJY2uPfZytzfAAAAD)
+[2025-06-10T16:54:40.115Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:54:49.055Z] [INFO] Клиент подключился (socketId: -tYGDGicgMy6mBtXAAAF)
+[2025-06-10T16:54:49.069Z] [INFO] Отправлен список публичных комнат: socketId=-tYGDGicgMy6mBtXAAAF, rooms=0
+[2025-06-10T16:54:50.881Z] [INFO] Клиент отключился (socketId: -tYGDGicgMy6mBtXAAAF)
+[2025-06-10T16:55:10.944Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:55:11.003Z] [INFO] Клиент подключился (socketId: Fb4Urt8QKVZiwMWsAAAH)
+[2025-06-10T16:55:11.030Z] [INFO] Отправлен список публичных комнат: socketId=Fb4Urt8QKVZiwMWsAAAH, rooms=0
+[2025-06-10T16:55:15.116Z] [INFO] Клиент отключился (socketId: Fb4Urt8QKVZiwMWsAAAH)
+[2025-06-10T16:55:18.621Z] [INFO] Клиент подключился (socketId: MTHcrD7OdSWHLKk2AAAJ)
+[2025-06-10T16:55:18.638Z] [INFO] Отправлен список публичных комнат: socketId=MTHcrD7OdSWHLKk2AAAJ, rooms=0
+[2025-06-10T16:56:20.763Z] [INFO] Клиент подключился (socketId: 4AzW8AZZTvU20ZiVAAAL)
+[2025-06-10T16:56:20.778Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:56:20.803Z] [INFO] Отправлен список публичных комнат: socketId=4AzW8AZZTvU20ZiVAAAL, rooms=0
+[2025-06-10T16:56:23.418Z] [INFO] Клиент отключился (socketId: 4AzW8AZZTvU20ZiVAAAL)
+[2025-06-10T16:56:28.588Z] [INFO] Клиент подключился (socketId: p6h3eNdm7go_uEvbAAAN)
+[2025-06-10T16:56:28.597Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:56:28.603Z] [INFO] Отправлен список публичных комнат: socketId=p6h3eNdm7go_uEvbAAAN, rooms=0
+[2025-06-10T16:56:31.926Z] [INFO] Клиент отключился (socketId: p6h3eNdm7go_uEvbAAAN)
+[2025-06-10T16:56:33.268Z] [INFO] Клиент подключился (socketId: x8aVfSOHcn9S1OApAAAP)
+[2025-06-10T16:56:33.277Z] [INFO] Отправлен список публичных комнат: socketId=x8aVfSOHcn9S1OApAAAP, rooms=0
+[2025-06-10T16:56:34.416Z] [INFO] Клиент отключился (socketId: x8aVfSOHcn9S1OApAAAP)
+[2025-06-10T16:56:35.555Z] [INFO] Клиент подключился (socketId: VYr2C_JPldvIAVs3AAAR)
+[2025-06-10T16:56:35.573Z] [INFO] Отправлен список публичных комнат: socketId=VYr2C_JPldvIAVs3AAAR, rooms=0
+[2025-06-10T16:56:36.616Z] [INFO] Клиент отключился (socketId: VYr2C_JPldvIAVs3AAAR)
+[2025-06-10T16:56:37.868Z] [INFO] Клиент подключился (socketId: BTsAZkr6znk9OvHtAAAT)
+[2025-06-10T16:56:37.873Z] [INFO] Отправлен список публичных комнат: socketId=BTsAZkr6znk9OvHtAAAT, rooms=0
+[2025-06-10T16:56:40.154Z] [INFO] Клиент отключился (socketId: BTsAZkr6znk9OvHtAAAT)
+[2025-06-10T16:56:40.208Z] [INFO] Клиент подключился (socketId: JXLTn9HLYVvIPV_uAAAV)
+[2025-06-10T16:56:40.210Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:56:40.218Z] [INFO] Отправлен список публичных комнат: socketId=JXLTn9HLYVvIPV_uAAAV, rooms=0
+[2025-06-10T16:56:41.991Z] [INFO] Клиент отключился (socketId: JXLTn9HLYVvIPV_uAAAV)
+[2025-06-10T16:56:50.759Z] [INFO] Клиент подключился (socketId: PpC8j5bDD70KGirsAAAX)
+[2025-06-10T16:56:50.769Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:56:50.777Z] [INFO] Отправлен список публичных комнат: socketId=PpC8j5bDD70KGirsAAAX, rooms=0
+[2025-06-10T16:56:53.262Z] [INFO] Клиент отключился (socketId: PpC8j5bDD70KGirsAAAX)
+[2025-06-10T16:56:53.357Z] [INFO] Клиент подключился (socketId: LVtqelYvJQlsMky_AAAZ)
+[2025-06-10T16:56:53.369Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:56:53.378Z] [INFO] Отправлен список публичных комнат: socketId=LVtqelYvJQlsMky_AAAZ, rooms=0
+[2025-06-10T16:57:00.646Z] [INFO] Клиент отключился (socketId: LVtqelYvJQlsMky_AAAZ)
+[2025-06-10T16:57:39.536Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-10T16:57:39.573Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-10T16:57:40.942Z] [INFO] Клиент подключился (socketId: H1Uovd8G8L7GN5i4AAAB)
+[2025-06-10T16:57:40.960Z] [INFO] Отправлен список публичных комнат: socketId=H1Uovd8G8L7GN5i4AAAB, rooms=0
+[2025-06-10T16:57:40.983Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:57:43.410Z] [INFO] Клиент отключился (socketId: H1Uovd8G8L7GN5i4AAAB)
+[2025-06-10T16:58:21.103Z] [INFO] Клиент подключился (socketId: hWN4GNWean71kRRzAAAD)
+[2025-06-10T16:58:21.171Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T16:58:21.173Z] [INFO] Отправлен список публичных комнат: socketId=hWN4GNWean71kRRzAAAD, rooms=0
+[2025-06-10T16:58:24.895Z] [INFO] Пользователь вошёл
+[2025-06-10T16:58:33.432Z] [INFO] Клиент отключился (socketId: hWN4GNWean71kRRzAAAD)
+[2025-06-10T16:58:35.380Z] [INFO] Клиент подключился (socketId: 3tGsltt1qdPtAGVSAAAF)
+[2025-06-10T16:58:35.447Z] [INFO] Отправлен список публичных комнат: socketId=3tGsltt1qdPtAGVSAAAF, rooms=0
+[2025-06-10T16:58:35.452Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:58:37.587Z] [INFO] Клиент отключился (socketId: 3tGsltt1qdPtAGVSAAAF)
+[2025-06-10T16:58:40.513Z] [INFO] Клиент подключился (socketId: 3Dvc2LIe1DCQh5BLAAAH)
+[2025-06-10T16:58:40.528Z] [INFO] Отправлен список публичных комнат: socketId=3Dvc2LIe1DCQh5BLAAAH, rooms=0
+[2025-06-10T16:58:40.530Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:58:47.224Z] [INFO] Клиент отключился (socketId: 3Dvc2LIe1DCQh5BLAAAH)
+[2025-06-10T16:58:47.307Z] [INFO] Клиент подключился (socketId: 2VGQFCyKr93uXuFdAAAJ)
+[2025-06-10T16:58:47.326Z] [INFO] Отправлен список публичных комнат: socketId=2VGQFCyKr93uXuFdAAAJ, rooms=0
+[2025-06-10T16:58:47.327Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:58:49.302Z] [INFO] Клиент отключился (socketId: 2VGQFCyKr93uXuFdAAAJ)
+[2025-06-10T16:58:49.401Z] [INFO] Клиент подключился (socketId: m7Ghdo7KxadfR-xJAAAL)
+[2025-06-10T16:58:49.411Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:58:49.413Z] [INFO] Отправлен список публичных комнат: socketId=m7Ghdo7KxadfR-xJAAAL, rooms=0
+[2025-06-10T16:58:50.117Z] [INFO] Клиент отключился (socketId: m7Ghdo7KxadfR-xJAAAL)
+[2025-06-10T16:58:50.166Z] [INFO] Клиент подключился (socketId: S3S0YEKjJcBp-jAiAAAN)
+[2025-06-10T16:58:50.217Z] [INFO] Отправлен список публичных комнат: socketId=S3S0YEKjJcBp-jAiAAAN, rooms=0
+[2025-06-10T16:58:50.222Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:58:55.096Z] [INFO] Клиент отключился (socketId: S3S0YEKjJcBp-jAiAAAN)
+[2025-06-10T16:59:01.021Z] [INFO] Клиент подключился (socketId: aZZJy3mOlf_XYUe2AAAP)
+[2025-06-10T16:59:01.095Z] [INFO] Отправлен список публичных комнат: socketId=aZZJy3mOlf_XYUe2AAAP, rooms=0
+[2025-06-10T16:59:01.101Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:59:03.733Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:59:03.762Z] [INFO] Клиент отключился (socketId: aZZJy3mOlf_XYUe2AAAP)
+[2025-06-10T16:59:07.393Z] [INFO] Клиент подключился (socketId: l-ZE2B36M7i4p_DEAAAR)
+[2025-06-10T16:59:07.416Z] [INFO] Отправлен список публичных комнат: socketId=l-ZE2B36M7i4p_DEAAAR, rooms=0
+[2025-06-10T16:59:07.418Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:59:12.768Z] [INFO] Клиент отключился (socketId: l-ZE2B36M7i4p_DEAAAR)
+[2025-06-10T16:59:18.206Z] [INFO] Клиент подключился (socketId: vtxrIFzJp1wufE8QAAAT)
+[2025-06-10T16:59:18.211Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T16:59:18.214Z] [INFO] Отправлен список публичных комнат: socketId=vtxrIFzJp1wufE8QAAAT, rooms=0
+[2025-06-10T17:03:40.075Z] [INFO] Клиент отключился (socketId: vtxrIFzJp1wufE8QAAAT)
+[2025-06-10T17:03:42.629Z] [INFO] Клиент подключился (socketId: aHYrq1bhTGuAIr2BAAAV)
+[2025-06-10T17:03:42.650Z] [INFO] Отправлен список публичных комнат: socketId=aHYrq1bhTGuAIr2BAAAV, rooms=0
+[2025-06-10T17:03:42.719Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:03:46.868Z] [INFO] Клиент отключился (socketId: aHYrq1bhTGuAIr2BAAAV)
+[2025-06-10T17:03:46.958Z] [INFO] Клиент подключился (socketId: UNaVqMvYjw8JLvqEAAAX)
+[2025-06-10T17:03:46.962Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:03:47.006Z] [INFO] Отправлен список публичных комнат: socketId=UNaVqMvYjw8JLvqEAAAX, rooms=0
+[2025-06-10T17:03:49.081Z] [INFO] Клиент отключился (socketId: UNaVqMvYjw8JLvqEAAAX)
+[2025-06-10T17:03:49.123Z] [INFO] Клиент подключился (socketId: 6LiBWmm8wVgVFONtAAAZ)
+[2025-06-10T17:03:49.132Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:03:49.183Z] [INFO] Отправлен список публичных комнат: socketId=6LiBWmm8wVgVFONtAAAZ, rooms=0
+[2025-06-10T17:03:50.044Z] [INFO] Клиент отключился (socketId: 6LiBWmm8wVgVFONtAAAZ)
+[2025-06-10T17:03:50.094Z] [INFO] Клиент подключился (socketId: VmLb4JFYEGc_-yD5AAAb)
+[2025-06-10T17:03:50.101Z] [INFO] Отправлен список публичных комнат: socketId=VmLb4JFYEGc_-yD5AAAb, rooms=0
+[2025-06-10T17:03:50.106Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:03:50.914Z] [INFO] Клиент отключился (socketId: VmLb4JFYEGc_-yD5AAAb)
+[2025-06-10T17:03:50.965Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:03:51.015Z] [INFO] Клиент подключился (socketId: ujWlYppBkgauOLRgAAAd)
+[2025-06-10T17:03:51.031Z] [INFO] Отправлен список публичных комнат: socketId=ujWlYppBkgauOLRgAAAd, rooms=0
+[2025-06-10T17:03:52.033Z] [INFO] Клиент отключился (socketId: ujWlYppBkgauOLRgAAAd)
+[2025-06-10T17:03:52.084Z] [INFO] Клиент подключился (socketId: v372wxkBB4iTF2G6AAAf)
+[2025-06-10T17:03:52.084Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:03:52.094Z] [INFO] Отправлен список публичных комнат: socketId=v372wxkBB4iTF2G6AAAf, rooms=0
+[2025-06-10T17:03:54.108Z] [INFO] Клиент отключился (socketId: v372wxkBB4iTF2G6AAAf)
+[2025-06-10T17:04:03.396Z] [INFO] Клиент подключился (socketId: ZKthlHcu27baN8RuAAAh)
+[2025-06-10T17:04:03.408Z] [INFO] Отправлен список публичных комнат: socketId=ZKthlHcu27baN8RuAAAh, rooms=0
+[2025-06-10T17:04:03.410Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:04:11.051Z] [INFO] Клиент отключился (socketId: ZKthlHcu27baN8RuAAAh)
+[2025-06-10T17:04:11.094Z] [INFO] Клиент подключился (socketId: mSv_jni-O2wNGEKEAAAj)
+[2025-06-10T17:04:11.106Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:04:11.161Z] [INFO] Отправлен список публичных комнат: socketId=mSv_jni-O2wNGEKEAAAj, rooms=0
+[2025-06-10T17:04:12.443Z] [INFO] Клиент отключился (socketId: mSv_jni-O2wNGEKEAAAj)
+[2025-06-10T17:04:12.494Z] [INFO] Клиент подключился (socketId: JqR0AgTp2FGuPuB5AAAl)
+[2025-06-10T17:04:12.497Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:04:12.505Z] [INFO] Отправлен список публичных комнат: socketId=JqR0AgTp2FGuPuB5AAAl, rooms=0
+[2025-06-10T17:11:39.504Z] [INFO] Клиент отключился (socketId: JqR0AgTp2FGuPuB5AAAl)
+[2025-06-10T17:11:53.997Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-10T17:11:54.039Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-10T17:11:55.660Z] [INFO] Клиент подключился (socketId: KwCKntoC6uk9LPQrAAAB)
+[2025-06-10T17:11:55.671Z] [INFO] Отправлен список публичных комнат: socketId=KwCKntoC6uk9LPQrAAAB, rooms=0
+[2025-06-10T17:11:55.736Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:11:58.234Z] [INFO] Пользователь вышел
+[2025-06-10T17:11:58.263Z] [INFO] Клиент отключился (socketId: KwCKntoC6uk9LPQrAAAB)
+[2025-06-10T17:11:58.298Z] [INFO] Клиент подключился (socketId: 49p-fTyKyvKLm9QqAAAD)
+[2025-06-10T17:11:58.318Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T17:11:58.323Z] [INFO] Отправлен список публичных комнат: socketId=49p-fTyKyvKLm9QqAAAD, rooms=0
+[2025-06-10T17:18:14.131Z] [INFO] Клиент отключился (socketId: 49p-fTyKyvKLm9QqAAAD)
+[2025-06-10T17:18:21.580Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-10T17:18:21.619Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-10T17:18:23.101Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T17:18:23.123Z] [INFO] Клиент подключился (socketId: ikIV6aUp5YJJL-dBAAAB)
+[2025-06-10T17:18:23.166Z] [INFO] Отправлен список публичных комнат: socketId=ikIV6aUp5YJJL-dBAAAB, rooms=0
+[2025-06-10T17:18:30.357Z] [INFO] Клиент отключился (socketId: ikIV6aUp5YJJL-dBAAAB)
+[2025-06-10T17:18:30.397Z] [INFO] Клиент подключился (socketId: OEur15nTv7rW7WwqAAAD)
+[2025-06-10T17:18:30.402Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T17:18:30.452Z] [INFO] Отправлен список публичных комнат: socketId=OEur15nTv7rW7WwqAAAD, rooms=0
+[2025-06-10T17:19:36.513Z] [INFO] Клиент отключился (socketId: OEur15nTv7rW7WwqAAAD)
+[2025-06-10T17:19:39.645Z] [INFO] Клиент подключился (socketId: vY9rFJek7Vh9JA6LAAAF)
+[2025-06-10T17:19:39.653Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T17:19:39.657Z] [INFO] Отправлен список публичных комнат: socketId=vY9rFJek7Vh9JA6LAAAF, rooms=0
+[2025-06-10T17:19:41.421Z] [INFO] Клиент отключился (socketId: vY9rFJek7Vh9JA6LAAAF)
+[2025-06-10T17:27:35.496Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-10T17:27:35.548Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-10T17:27:36.927Z] [INFO] Клиент подключился (socketId: Dk_x8QdNDLGek_OVAAAB)
+[2025-06-10T17:27:37.088Z] [INFO] Отправлен список публичных комнат: socketId=Dk_x8QdNDLGek_OVAAAB, rooms=0
+[2025-06-10T17:27:37.144Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T17:27:40.324Z] [INFO] Пользователь вошёл
+[2025-06-10T17:27:41.171Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:27:41.209Z] [INFO] Клиент отключился (socketId: Dk_x8QdNDLGek_OVAAAB)
+[2025-06-10T17:28:43.238Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:30:36.283Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:31:07.451Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:34:54.730Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:34:56.484Z] [INFO] Клиент подключился (socketId: Ppmhijp8ZNw9oOnfAAAD)
+[2025-06-10T17:34:56.516Z] [INFO] Отправлен список публичных комнат: socketId=Ppmhijp8ZNw9oOnfAAAD, rooms=0
+[2025-06-10T17:34:56.527Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:34:57.408Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:34:57.434Z] [INFO] Клиент отключился (socketId: Ppmhijp8ZNw9oOnfAAAD)
+[2025-06-10T17:36:39.072Z] [INFO] Клиент подключился (socketId: Gi4jD6sDlmTrgJTpAAAF)
+[2025-06-10T17:36:39.073Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:36:39.084Z] [INFO] Отправлен список публичных комнат: socketId=Gi4jD6sDlmTrgJTpAAAF, rooms=0
+[2025-06-10T17:36:39.736Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:36:39.772Z] [INFO] Клиент отключился (socketId: Gi4jD6sDlmTrgJTpAAAF)
+[2025-06-10T17:36:42.344Z] [INFO] Профиль обновлен
+[2025-06-10T17:36:42.653Z] [INFO] Профиль обновлен
+[2025-06-10T17:36:43.030Z] [INFO] Профиль обновлен
+[2025-06-10T17:36:43.265Z] [INFO] Профиль обновлен
+[2025-06-10T17:36:43.459Z] [INFO] Профиль обновлен
+[2025-06-10T17:36:43.623Z] [INFO] Профиль обновлен
+[2025-06-10T17:36:43.832Z] [INFO] Профиль обновлен
+[2025-06-10T17:36:50.977Z] [INFO] Профиль обновлен
+[2025-06-10T17:37:25.114Z] [INFO] Профиль обновлен
+[2025-06-10T17:39:01.481Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:39:13.559Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:39:13.607Z] [INFO] Клиент подключился (socketId: zkznanM-moIxH0qEAAAH)
+[2025-06-10T17:39:13.627Z] [INFO] Отправлен список публичных комнат: socketId=zkznanM-moIxH0qEAAAH, rooms=0
+[2025-06-10T17:42:09.899Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:42:09.916Z] [INFO] Клиент отключился (socketId: zkznanM-moIxH0qEAAAH)
+[2025-06-10T17:42:18.347Z] [INFO] Клиент подключился (socketId: h1utJqQPBkByfYb8AAAJ)
+[2025-06-10T17:42:18.360Z] [INFO] Отправлен список публичных комнат: socketId=h1utJqQPBkByfYb8AAAJ, rooms=0
+[2025-06-10T17:42:18.368Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:52:13.592Z] [INFO] Комната создана: roomCode=CUSJ9B, creator=vika, sessionId=73, socketId=h1utJqQPBkByfYb8AAAJ
+[2025-06-10T17:52:13.703Z] [INFO] Клиент подключился (socketId: xnhuycL00Cxn-liyAAAL)
+[2025-06-10T17:52:13.714Z] [INFO] Клиент отключился (socketId: h1utJqQPBkByfYb8AAAJ)
+[2025-06-10T17:52:13.751Z] [INFO] История чата отправлена: roomCode=CUSJ9B, socketId=xnhuycL00Cxn-liyAAAL
+[2025-06-10T17:52:13.757Z] [INFO] Игрок присоединился: roomCode=CUSJ9B, name=vika, socketId=xnhuycL00Cxn-liyAAAL, creatorName=vika, isHost=true
+[2025-06-10T17:52:25.353Z] [INFO] Клиент подключился (socketId: A_lD5P72nBUGbI4TAAAN)
+[2025-06-10T17:52:25.370Z] [INFO] Отправлен список публичных комнат: socketId=A_lD5P72nBUGbI4TAAAN, rooms=0
+[2025-06-10T17:52:25.385Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T17:52:31.968Z] [INFO] Пользователь вошёл
+[2025-06-10T17:52:45.193Z] [INFO] Игрок присоединился: roomCode=CUSJ9B, name=loshka, socketId=A_lD5P72nBUGbI4TAAAN, creatorName=vika, isHost=false
+[2025-06-10T17:52:45.274Z] [INFO] Игрок покинул комнату: roomCode=CUSJ9B, name=loshka, socketId=A_lD5P72nBUGbI4TAAAN
+[2025-06-10T17:52:45.275Z] [INFO] Клиент отключился (socketId: A_lD5P72nBUGbI4TAAAN)
+[2025-06-10T17:52:45.332Z] [INFO] Клиент подключился (socketId: Vb9eb9K-CC6KnfubAAAP)
+[2025-06-10T17:52:45.420Z] [INFO] История чата отправлена: roomCode=CUSJ9B, socketId=Vb9eb9K-CC6KnfubAAAP
+[2025-06-10T17:52:45.425Z] [INFO] Игрок присоединился: roomCode=CUSJ9B, name=loshka, socketId=Vb9eb9K-CC6KnfubAAAP, creatorName=vika, isHost=false
+[2025-06-10T17:52:50.320Z] [INFO] Вопрос отправлен: roomCode=CUSJ9B, questionIndex=0
+[2025-06-10T17:52:50.321Z] [INFO] Игра началась: roomCode=CUSJ9B, questionCount=15
+[2025-06-10T17:52:51.938Z] [INFO] Игрок vika ответил правильно: score=1, roomCode=CUSJ9B
+[2025-06-10T17:52:52.946Z] [INFO] Вопрос отправлен: roomCode=CUSJ9B, questionIndex=1
+[2025-06-10T17:52:55.284Z] [INFO] Отправлено событие hostLeft: roomCode=CUSJ9B, players=1
+[2025-06-10T17:52:55.293Z] [INFO] Комната удалена из базы данных: roomCode=CUSJ9B, sessionId=73
+[2025-06-10T17:52:55.293Z] [INFO] Комната закрыта: roomCode=CUSJ9B
+[2025-06-10T17:52:55.367Z] [INFO] Клиент отключился (socketId: xnhuycL00Cxn-liyAAAL)
+[2025-06-10T17:52:55.388Z] [INFO] Клиент подключился (socketId: Umds2NoUnOChxrPQAAAR)
+[2025-06-10T17:52:55.402Z] [INFO] Отправлен список публичных комнат: socketId=Umds2NoUnOChxrPQAAAR, rooms=0
+[2025-06-10T17:52:55.404Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:53:27.255Z] [INFO] Клиент отключился (socketId: Vb9eb9K-CC6KnfubAAAP)
+[2025-06-10T17:53:27.300Z] [INFO] Клиент подключился (socketId: arI3HRfnaCpqP5aiAAAT)
+[2025-06-10T17:53:27.310Z] [INFO] Отправлен список публичных комнат: socketId=arI3HRfnaCpqP5aiAAAT, rooms=0
+[2025-06-10T17:53:34.252Z] [INFO] Пользователь вошёл
+[2025-06-10T17:54:14.712Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-10T17:54:14.757Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-10T17:54:14.975Z] [INFO] Клиент подключился (socketId: D0TYhosvzZEyB6NJAAAB)
+[2025-06-10T17:54:16.091Z] [INFO] Клиент подключился (socketId: DxqBQWi5_y16tcRkAAAD)
+[2025-06-10T17:54:16.272Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:54:16.287Z] [INFO] Клиент подключился (socketId: KqaM3fbuFN4SOIrdAAAF)
+[2025-06-10T17:54:16.318Z] [INFO] Отправлен список публичных комнат: socketId=KqaM3fbuFN4SOIrdAAAF, rooms=0
+[2025-06-10T17:54:19.000Z] [INFO] Клиент отключился (socketId: DxqBQWi5_y16tcRkAAAD)
+[2025-06-10T17:54:21.014Z] [INFO] Комната создана: roomCode=370Q21, creator=vika, sessionId=74, socketId=KqaM3fbuFN4SOIrdAAAF
+[2025-06-10T17:54:21.083Z] [INFO] Клиент отключился (socketId: KqaM3fbuFN4SOIrdAAAF)
+[2025-06-10T17:54:21.120Z] [INFO] Клиент подключился (socketId: k9-kd3146crLfUa2AAAH)
+[2025-06-10T17:54:21.140Z] [INFO] История чата отправлена: roomCode=370Q21, socketId=k9-kd3146crLfUa2AAAH
+[2025-06-10T17:54:21.146Z] [INFO] Игрок присоединился: roomCode=370Q21, name=vika, socketId=k9-kd3146crLfUa2AAAH, creatorName=vika, isHost=true
+[2025-06-10T17:54:22.526Z] [INFO] Статус приватности изменён: roomCode=370Q21, isPrivate=false
+[2025-06-10T17:54:30.648Z] [INFO] Клиент отключился (socketId: D0TYhosvzZEyB6NJAAAB)
+[2025-06-10T17:54:32.147Z] [INFO] Клиент подключился (socketId: Ns9alxmFpocsIVVEAAAJ)
+[2025-06-10T17:54:32.159Z] [INFO] Отправлен список публичных комнат: socketId=Ns9alxmFpocsIVVEAAAJ, rooms=1
+[2025-06-10T17:54:32.170Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-10T17:54:34.488Z] [INFO] Игрок присоединился: roomCode=370Q21, name=loshka, socketId=Ns9alxmFpocsIVVEAAAJ, creatorName=vika, isHost=false
+[2025-06-10T17:54:34.552Z] [INFO] Игрок покинул комнату: roomCode=370Q21, name=loshka, socketId=Ns9alxmFpocsIVVEAAAJ
+[2025-06-10T17:54:34.553Z] [INFO] Клиент отключился (socketId: Ns9alxmFpocsIVVEAAAJ)
+[2025-06-10T17:54:34.613Z] [INFO] Клиент подключился (socketId: 4va6daOwcONFRXO1AAAL)
+[2025-06-10T17:54:34.630Z] [INFO] История чата отправлена: roomCode=370Q21, socketId=4va6daOwcONFRXO1AAAL
+[2025-06-10T17:54:34.634Z] [INFO] Игрок присоединился: roomCode=370Q21, name=loshka, socketId=4va6daOwcONFRXO1AAAL, creatorName=vika, isHost=false
+[2025-06-10T17:54:37.668Z] [INFO] Вопрос отправлен: roomCode=370Q21, questionIndex=0
+[2025-06-10T17:54:37.668Z] [INFO] Игра началась: roomCode=370Q21, questionCount=15
+[2025-06-10T17:54:39.285Z] [INFO] Игрок vika ответил правильно: score=1, roomCode=370Q21
+[2025-06-10T17:54:40.288Z] [INFO] Вопрос отправлен: roomCode=370Q21, questionIndex=1
+[2025-06-10T17:54:41.824Z] [INFO] Отправлено событие hostLeft: roomCode=370Q21, players=1
+[2025-06-10T17:54:41.834Z] [INFO] Комната удалена из базы данных: roomCode=370Q21, sessionId=74
+[2025-06-10T17:54:41.834Z] [INFO] Комната закрыта: roomCode=370Q21
+[2025-06-10T17:54:41.923Z] [INFO] Клиент отключился (socketId: k9-kd3146crLfUa2AAAH)
+[2025-06-10T17:54:42.040Z] [INFO] Клиент подключился (socketId: UNtCr--zo_AK1f7MAAAN)
+[2025-06-10T17:54:42.057Z] [INFO] Отправлен список публичных комнат: socketId=UNtCr--zo_AK1f7MAAAN, rooms=0
+[2025-06-10T17:54:42.058Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T17:54:42.072Z] [INFO] Клиент отключился (socketId: 4va6daOwcONFRXO1AAAL)
+[2025-06-10T17:54:42.112Z] [INFO] Клиент подключился (socketId: BF6jVW3lppqM9nl0AAAP)
+[2025-06-10T17:54:42.134Z] [INFO] Отправлен список публичных комнат: socketId=BF6jVW3lppqM9nl0AAAP, rooms=0
+[2025-06-10T17:54:42.140Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-10T18:08:16.491Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-10T18:08:16.535Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-10T18:08:18.054Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T18:08:18.087Z] [INFO] Клиент подключился (socketId: rBn0bt1bKDnWuUZGAAAB)
+[2025-06-10T18:08:18.105Z] [INFO] Отправлен список публичных комнат: socketId=rBn0bt1bKDnWuUZGAAAB, rooms=0
+[2025-06-10T18:08:18.972Z] [INFO] Клиент подключился (socketId: 10aOBlGqwmBsUhT6AAAD)
+[2025-06-10T18:08:20.961Z] [INFO] Клиент подключился (socketId: jrxswEEFIVLMeQ_hAAAF)
+[2025-06-10T18:08:21.192Z] [INFO] Пользователь вошёл
+[2025-06-10T18:08:22.365Z] [INFO] Комната создана: roomCode=OB3INV, creator=vika, sessionId=75, socketId=rBn0bt1bKDnWuUZGAAAB
+[2025-06-10T18:08:22.476Z] [INFO] Клиент подключился (socketId: iP_DRLKMGmSSJLbLAAAH)
+[2025-06-10T18:08:22.486Z] [INFO] Клиент отключился (socketId: rBn0bt1bKDnWuUZGAAAB)
+[2025-06-10T18:08:22.504Z] [INFO] История чата отправлена: roomCode=OB3INV, socketId=iP_DRLKMGmSSJLbLAAAH
+[2025-06-10T18:08:22.508Z] [INFO] Игрок присоединился: roomCode=OB3INV, name=vika, socketId=iP_DRLKMGmSSJLbLAAAH, creatorName=vika, isHost=true
+[2025-06-10T18:08:23.558Z] [INFO] Статус приватности изменён: roomCode=OB3INV, isPrivate=false
+[2025-06-10T18:08:27.500Z] [INFO] Сообщение в чате: roomCode=OB3INV, name=vika, message=e
+[2025-06-10T18:08:36.224Z] [INFO] Клиент отключился (socketId: iP_DRLKMGmSSJLbLAAAH)
+[2025-06-10T18:08:36.254Z] [INFO] Клиент подключился (socketId: TPYEm-awgUqNj2KUAAAJ)
+[2025-06-10T18:08:36.267Z] [INFO] История чата отправлена: roomCode=OB3INV, socketId=TPYEm-awgUqNj2KUAAAJ
+[2025-06-10T18:08:36.268Z] [INFO] Хост переподключился: roomCode=OB3INV, name=vika, newSocketId=TPYEm-awgUqNj2KUAAAJ
+[2025-06-10T18:08:54.153Z] [INFO] Клиент отключился (socketId: TPYEm-awgUqNj2KUAAAJ)
+[2025-06-10T18:08:54.187Z] [INFO] Клиент подключился (socketId: FocHo1Lm5RPVO9mUAAAL)
+[2025-06-10T18:08:54.203Z] [INFO] История чата отправлена: roomCode=OB3INV, socketId=FocHo1Lm5RPVO9mUAAAL
+[2025-06-10T18:08:54.204Z] [INFO] Хост переподключился: roomCode=OB3INV, name=vika, newSocketId=FocHo1Lm5RPVO9mUAAAL
+[2025-06-10T18:09:06.226Z] [INFO] Клиент отключился (socketId: 10aOBlGqwmBsUhT6AAAD)
+[2025-06-10T18:09:06.893Z] [INFO] Клиент подключился (socketId: K6jRHy6VfztXao_bAAAN)
+[2025-06-10T18:09:06.908Z] [INFO] Отправлен список публичных комнат: socketId=K6jRHy6VfztXao_bAAAN, rooms=1
+[2025-06-10T18:09:06.935Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-10T18:09:09.639Z] [INFO] Игрок присоединился: roomCode=OB3INV, name=loshka, socketId=K6jRHy6VfztXao_bAAAN, creatorName=vika, isHost=false
+[2025-06-10T18:09:09.702Z] [INFO] Игрок покинул комнату: roomCode=OB3INV, name=loshka, socketId=K6jRHy6VfztXao_bAAAN
+[2025-06-10T18:09:09.702Z] [INFO] Клиент отключился (socketId: K6jRHy6VfztXao_bAAAN)
+[2025-06-10T18:09:09.766Z] [INFO] Клиент подключился (socketId: 8iG898g2EST4LIPgAAAP)
+[2025-06-10T18:09:09.795Z] [INFO] История чата отправлена: roomCode=OB3INV, socketId=8iG898g2EST4LIPgAAAP
+[2025-06-10T18:09:09.798Z] [INFO] Игрок присоединился: roomCode=OB3INV, name=loshka, socketId=8iG898g2EST4LIPgAAAP, creatorName=vika, isHost=false
+[2025-06-10T18:09:15.892Z] [INFO] Клиент отключился (socketId: jrxswEEFIVLMeQ_hAAAF)
+[2025-06-10T18:09:38.234Z] [INFO] Клиент отключился (socketId: FocHo1Lm5RPVO9mUAAAL)
+[2025-06-10T18:09:38.262Z] [INFO] Клиент подключился (socketId: JBA5djWmlTdq5Le9AAAR)
+[2025-06-10T18:09:38.281Z] [INFO] История чата отправлена: roomCode=OB3INV, socketId=JBA5djWmlTdq5Le9AAAR
+[2025-06-10T18:09:38.283Z] [INFO] Хост переподключился: roomCode=OB3INV, name=vika, newSocketId=JBA5djWmlTdq5Le9AAAR
+[2025-06-10T18:12:35.208Z] [INFO] Клиент отключился (socketId: JBA5djWmlTdq5Le9AAAR)
+[2025-06-10T18:12:35.250Z] [INFO] Клиент подключился (socketId: DA66YuQaYZyka5-aAAAT)
+[2025-06-10T18:12:35.266Z] [INFO] История чата отправлена: roomCode=OB3INV, socketId=DA66YuQaYZyka5-aAAAT
+[2025-06-10T18:12:35.267Z] [INFO] Хост переподключился: roomCode=OB3INV, name=vika, newSocketId=DA66YuQaYZyka5-aAAAT
+[2025-06-10T18:12:41.029Z] [INFO] Клиент отключился (socketId: DA66YuQaYZyka5-aAAAT)
+[2025-06-10T18:12:41.065Z] [INFO] Клиент подключился (socketId: S4QR_n0aoQEXdgT4AAAV)
+[2025-06-10T18:12:41.077Z] [INFO] История чата отправлена: roomCode=OB3INV, socketId=S4QR_n0aoQEXdgT4AAAV
+[2025-06-10T18:12:41.078Z] [INFO] Хост переподключился: roomCode=OB3INV, name=vika, newSocketId=S4QR_n0aoQEXdgT4AAAV
+[2025-06-10T18:12:48.364Z] [INFO] Вопрос отправлен: roomCode=OB3INV, questionIndex=0
+[2025-06-10T18:12:48.364Z] [INFO] Игра началась: roomCode=OB3INV, questionCount=15
+[2025-06-10T18:12:50.346Z] [INFO] Отправлено событие hostLeft: roomCode=OB3INV, players=1
+[2025-06-10T18:12:50.360Z] [INFO] Комната удалена из базы данных: roomCode=OB3INV, sessionId=75
+[2025-06-10T18:12:50.360Z] [INFO] Комната закрыта: roomCode=OB3INV
+[2025-06-10T18:12:50.433Z] [INFO] Клиент отключился (socketId: S4QR_n0aoQEXdgT4AAAV)
+[2025-06-10T18:12:50.447Z] [INFO] Клиент подключился (socketId: IyuXYEjWUzwWqB24AAAX)
+[2025-06-10T18:12:50.514Z] [INFO] Отправлен список публичных комнат: socketId=IyuXYEjWUzwWqB24AAAX, rooms=0
+[2025-06-10T18:12:50.518Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:12:53.597Z] [INFO] Клиент отключился (socketId: 8iG898g2EST4LIPgAAAP)
+[2025-06-10T18:12:53.673Z] [INFO] Клиент подключился (socketId: 4fpiFzG7dDiPsLGoAAAZ)
+[2025-06-10T18:12:53.683Z] [WARN] Запрос игроков для несуществующей комнаты: roomCode=OB3INV
+[2025-06-10T18:12:53.788Z] [INFO] История чата пуста: roomCode=OB3INV, socketId=4fpiFzG7dDiPsLGoAAAZ
+[2025-06-10T18:12:53.788Z] [WARN] Попытка переподключения к несуществующей комнате: roomCode=OB3INV, name=loshka
+[2025-06-10T18:12:55.371Z] [INFO] Клиент отключился (socketId: 4fpiFzG7dDiPsLGoAAAZ)
+[2025-06-10T18:12:55.448Z] [INFO] Клиент подключился (socketId: NtpwxGp7_q0myC6uAAAb)
+[2025-06-10T18:12:55.464Z] [WARN] Запрос игроков для несуществующей комнаты: roomCode=OB3INV
+[2025-06-10T18:12:55.464Z] [INFO] История чата пуста: roomCode=OB3INV, socketId=NtpwxGp7_q0myC6uAAAb
+[2025-06-10T18:12:55.465Z] [WARN] Попытка переподключения к несуществующей комнате: roomCode=OB3INV, name=loshka
+[2025-06-10T18:12:55.978Z] [INFO] Клиент отключился (socketId: NtpwxGp7_q0myC6uAAAb)
+[2025-06-10T18:12:56.017Z] [INFO] Клиент подключился (socketId: ziaRNpcoVB3zPhpdAAAd)
+[2025-06-10T18:12:56.031Z] [INFO] Отправлен список публичных комнат: socketId=ziaRNpcoVB3zPhpdAAAd, rooms=0
+[2025-06-10T18:13:01.522Z] [INFO] Клиент отключился (socketId: ziaRNpcoVB3zPhpdAAAd)
+[2025-06-10T18:13:05.703Z] [INFO] Клиент отключился (socketId: IyuXYEjWUzwWqB24AAAX)
+[2025-06-10T18:21:05.546Z] [INFO] Сервер запущен на http://localhost:3000
+[2025-06-10T18:21:05.600Z] [INFO] ✅ Успешное подключение к базе данных
+[2025-06-10T18:21:07.520Z] [INFO] Клиент подключился (socketId: EwDY7A6aCT55TmweAAAB)
+[2025-06-10T18:21:07.540Z] [INFO] Отправлен список публичных комнат: socketId=EwDY7A6aCT55TmweAAAB, rooms=0
+[2025-06-10T18:21:07.590Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:21:10.510Z] [INFO] Комната создана: roomCode=XBXHBS, creator=vika, sessionId=76, socketId=EwDY7A6aCT55TmweAAAB
+[2025-06-10T18:21:10.597Z] [INFO] Клиент отключился (socketId: EwDY7A6aCT55TmweAAAB)
+[2025-06-10T18:21:15.600Z] [INFO] Отправлено событие hostLeft: roomCode=XBXHBS, players=0
+[2025-06-10T18:21:15.606Z] [INFO] Комната удалена из базы данных: roomCode=XBXHBS, sessionId=76
+[2025-06-10T18:21:15.607Z] [INFO] Комната закрыта: roomCode=XBXHBS
+[2025-06-10T18:21:27.777Z] [INFO] Клиент подключился (socketId: hGd5SWZYCAlbvGcaAAAD)
+[2025-06-10T18:21:27.785Z] [WARN] Запрос игроков для несуществующей комнаты: roomCode=XBXHBS
+[2025-06-10T18:21:27.903Z] [INFO] История чата пуста: roomCode=XBXHBS, socketId=hGd5SWZYCAlbvGcaAAAD
+[2025-06-10T18:21:27.904Z] [WARN] Попытка подключения к несуществующей комнате: roomCode=XBXHBS, name=vika
+[2025-06-10T18:21:28.813Z] [INFO] Клиент отключился (socketId: hGd5SWZYCAlbvGcaAAAD)
+[2025-06-10T18:21:28.848Z] [INFO] Клиент подключился (socketId: CVgUCsm43d0QpEyIAAAF)
+[2025-06-10T18:21:28.861Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:21:28.925Z] [INFO] Отправлен список публичных комнат: socketId=CVgUCsm43d0QpEyIAAAF, rooms=0
+[2025-06-10T18:21:30.392Z] [INFO] Комната создана: roomCode=FQL0J7, creator=vika, sessionId=77, socketId=CVgUCsm43d0QpEyIAAAF
+[2025-06-10T18:21:30.469Z] [INFO] Клиент подключился (socketId: TeBIC_WKRKQkMyicAAAH)
+[2025-06-10T18:21:30.484Z] [INFO] Клиент отключился (socketId: CVgUCsm43d0QpEyIAAAF)
+[2025-06-10T18:21:30.503Z] [INFO] История чата отправлена: roomCode=FQL0J7, socketId=TeBIC_WKRKQkMyicAAAH
+[2025-06-10T18:21:30.505Z] [INFO] Игрок присоединился: roomCode=FQL0J7, name=vika, socketId=TeBIC_WKRKQkMyicAAAH, creatorName=vika, isHost=true
+[2025-06-10T18:21:32.231Z] [INFO] Отправлено событие hostLeft: roomCode=FQL0J7, players=0
+[2025-06-10T18:21:32.238Z] [INFO] Комната удалена из базы данных: roomCode=FQL0J7, sessionId=77
+[2025-06-10T18:21:32.238Z] [INFO] Комната закрыта: roomCode=FQL0J7
+[2025-06-10T18:21:32.323Z] [INFO] Клиент подключился (socketId: ibFLEFWfIzn3FQOmAAAJ)
+[2025-06-10T18:21:32.332Z] [INFO] Клиент отключился (socketId: TeBIC_WKRKQkMyicAAAH)
+[2025-06-10T18:21:32.337Z] [INFO] Отправлен список публичных комнат: socketId=ibFLEFWfIzn3FQOmAAAJ, rooms=0
+[2025-06-10T18:21:32.348Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:22:36.394Z] [INFO] Комната создана: roomCode=IRTYWY, creator=vika, sessionId=78, socketId=ibFLEFWfIzn3FQOmAAAJ
+[2025-06-10T18:22:36.464Z] [INFO] Клиент подключился (socketId: R5Na9xjaTuSbGAagAAAL)
+[2025-06-10T18:22:36.471Z] [INFO] Клиент отключился (socketId: ibFLEFWfIzn3FQOmAAAJ)
+[2025-06-10T18:22:36.491Z] [INFO] История чата отправлена: roomCode=IRTYWY, socketId=R5Na9xjaTuSbGAagAAAL
+[2025-06-10T18:22:36.498Z] [INFO] Игрок присоединился: roomCode=IRTYWY, name=vika, socketId=R5Na9xjaTuSbGAagAAAL, creatorName=vika, isHost=true
+[2025-06-10T18:22:52.374Z] [INFO] Вопрос отправлен: roomCode=IRTYWY, questionIndex=0
+[2025-06-10T18:22:52.374Z] [INFO] Игра началась: roomCode=IRTYWY, questionCount=15
+[2025-06-10T18:22:59.523Z] [INFO] Отправлено событие hostLeft: roomCode=IRTYWY, players=0
+[2025-06-10T18:22:59.531Z] [INFO] Комната удалена из базы данных: roomCode=IRTYWY, sessionId=78
+[2025-06-10T18:22:59.531Z] [INFO] Комната закрыта: roomCode=IRTYWY
+[2025-06-10T18:22:59.597Z] [INFO] Клиент отключился (socketId: R5Na9xjaTuSbGAagAAAL)
+[2025-06-10T18:22:59.633Z] [INFO] Клиент подключился (socketId: f-gwVKLdAbZlmAEsAAAN)
+[2025-06-10T18:22:59.650Z] [INFO] Отправлен список публичных комнат: socketId=f-gwVKLdAbZlmAEsAAAN, rooms=0
+[2025-06-10T18:22:59.688Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:23:01.092Z] [INFO] Комната создана: roomCode=TE9YLQ, creator=vika, sessionId=79, socketId=f-gwVKLdAbZlmAEsAAAN
+[2025-06-10T18:23:01.161Z] [INFO] Клиент подключился (socketId: TG6K7nOVe_0-wA5IAAAP)
+[2025-06-10T18:23:01.164Z] [INFO] Клиент отключился (socketId: f-gwVKLdAbZlmAEsAAAN)
+[2025-06-10T18:23:01.177Z] [INFO] История чата отправлена: roomCode=TE9YLQ, socketId=TG6K7nOVe_0-wA5IAAAP
+[2025-06-10T18:23:01.185Z] [INFO] Игрок присоединился: roomCode=TE9YLQ, name=vika, socketId=TG6K7nOVe_0-wA5IAAAP, creatorName=vika, isHost=true
+[2025-06-10T18:23:09.017Z] [INFO] Вопрос отправлен: roomCode=TE9YLQ, questionIndex=0
+[2025-06-10T18:23:09.017Z] [INFO] Игра началась: roomCode=TE9YLQ, questionCount=16
+[2025-06-10T18:23:12.143Z] [INFO] Отправлено событие hostLeft: roomCode=TE9YLQ, players=0
+[2025-06-10T18:23:12.153Z] [INFO] Комната удалена из базы данных: roomCode=TE9YLQ, sessionId=79
+[2025-06-10T18:23:12.153Z] [INFO] Комната закрыта: roomCode=TE9YLQ
+[2025-06-10T18:23:12.231Z] [INFO] Клиент отключился (socketId: TG6K7nOVe_0-wA5IAAAP)
+[2025-06-10T18:23:12.241Z] [INFO] Клиент подключился (socketId: oNkiV5miaVNUfEuuAAAR)
+[2025-06-10T18:23:12.253Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:23:12.307Z] [INFO] Отправлен список публичных комнат: socketId=oNkiV5miaVNUfEuuAAAR, rooms=0
+[2025-06-10T18:23:13.603Z] [INFO] Комната создана: roomCode=MA82M2, creator=vika, sessionId=80, socketId=oNkiV5miaVNUfEuuAAAR
+[2025-06-10T18:23:13.674Z] [INFO] Клиент подключился (socketId: 32SinljJxl_wSiLBAAAT)
+[2025-06-10T18:23:13.683Z] [INFO] Клиент отключился (socketId: oNkiV5miaVNUfEuuAAAR)
+[2025-06-10T18:23:13.696Z] [INFO] История чата отправлена: roomCode=MA82M2, socketId=32SinljJxl_wSiLBAAAT
+[2025-06-10T18:23:13.698Z] [INFO] Игрок присоединился: roomCode=MA82M2, name=vika, socketId=32SinljJxl_wSiLBAAAT, creatorName=vika, isHost=true
+[2025-06-10T18:23:33.215Z] [INFO] Клиент подключился (socketId: dnqwhoTOqVGwN1RvAAAV)
+[2025-06-10T18:23:33.232Z] [INFO] Отправлен список публичных комнат: socketId=dnqwhoTOqVGwN1RvAAAV, rooms=0
+[2025-06-10T18:23:33.252Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T18:23:37.609Z] [INFO] Пользователь вошёл
+[2025-06-10T18:23:40.527Z] [INFO] Статус приватности изменён: roomCode=MA82M2, isPrivate=false
+[2025-06-10T18:23:41.465Z] [INFO] Клиент отключился (socketId: dnqwhoTOqVGwN1RvAAAV)
+[2025-06-10T18:23:41.550Z] [INFO] Клиент подключился (socketId: G3kIWiL98s1Zojm-AAAX)
+[2025-06-10T18:23:41.573Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-10T18:23:41.619Z] [INFO] Отправлен список публичных комнат: socketId=G3kIWiL98s1Zojm-AAAX, rooms=1
+[2025-06-10T18:23:42.303Z] [INFO] Игрок присоединился: roomCode=MA82M2, name=loshka, socketId=G3kIWiL98s1Zojm-AAAX, creatorName=vika, isHost=false
+[2025-06-10T18:23:42.384Z] [INFO] Игрок покинул комнату: roomCode=MA82M2, name=loshka, socketId=G3kIWiL98s1Zojm-AAAX
+[2025-06-10T18:23:42.384Z] [INFO] Клиент отключился (socketId: G3kIWiL98s1Zojm-AAAX)
+[2025-06-10T18:23:42.449Z] [INFO] Клиент подключился (socketId: rFhEA9eGZRmMKMrUAAAZ)
+[2025-06-10T18:23:42.473Z] [INFO] История чата отправлена: roomCode=MA82M2, socketId=rFhEA9eGZRmMKMrUAAAZ
+[2025-06-10T18:23:42.477Z] [INFO] Игрок присоединился: roomCode=MA82M2, name=loshka, socketId=rFhEA9eGZRmMKMrUAAAZ, creatorName=vika, isHost=false
+[2025-06-10T18:23:48.875Z] [INFO] Вопрос отправлен: roomCode=MA82M2, questionIndex=0
+[2025-06-10T18:23:48.875Z] [INFO] Игра началась: roomCode=MA82M2, questionCount=3
+[2025-06-10T18:23:51.747Z] [INFO] Отправлено событие hostLeft: roomCode=MA82M2, players=1
+[2025-06-10T18:23:51.760Z] [INFO] Комната удалена из базы данных: roomCode=MA82M2, sessionId=80
+[2025-06-10T18:23:51.760Z] [INFO] Комната закрыта: roomCode=MA82M2
+[2025-06-10T18:23:51.831Z] [INFO] Клиент отключился (socketId: 32SinljJxl_wSiLBAAAT)
+[2025-06-10T18:23:51.845Z] [INFO] Клиент подключился (socketId: qMhooHLOpEfc5pWDAAAb)
+[2025-06-10T18:23:51.917Z] [INFO] Отправлен список публичных комнат: socketId=qMhooHLOpEfc5pWDAAAb, rooms=0
+[2025-06-10T18:23:51.920Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:23:54.184Z] [INFO] Клиент отключился (socketId: rFhEA9eGZRmMKMrUAAAZ)
+[2025-06-10T18:23:54.277Z] [INFO] Клиент подключился (socketId: onbfgFBYvUfzUJ3aAAAd)
+[2025-06-10T18:23:54.294Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-10T18:23:54.298Z] [INFO] Отправлен список публичных комнат: socketId=onbfgFBYvUfzUJ3aAAAd, rooms=0
+[2025-06-10T18:24:12.598Z] [INFO] Клиент отключился (socketId: onbfgFBYvUfzUJ3aAAAd)
+[2025-06-10T18:27:12.940Z] [INFO] Комната создана: roomCode=ANF4B6, creator=vika, sessionId=81, socketId=qMhooHLOpEfc5pWDAAAb
+[2025-06-10T18:27:13.021Z] [INFO] Клиент подключился (socketId: lu9kE5foDtyFjERbAAAf)
+[2025-06-10T18:27:13.022Z] [INFO] Клиент отключился (socketId: qMhooHLOpEfc5pWDAAAb)
+[2025-06-10T18:27:13.054Z] [INFO] История чата отправлена: roomCode=ANF4B6, socketId=lu9kE5foDtyFjERbAAAf
+[2025-06-10T18:27:13.057Z] [INFO] Игрок присоединился: roomCode=ANF4B6, name=vika, socketId=lu9kE5foDtyFjERbAAAf, creatorName=vika, isHost=true
+[2025-06-10T18:27:14.434Z] [INFO] Статус приватности изменён: roomCode=ANF4B6, isPrivate=false
+[2025-06-10T18:27:16.616Z] [INFO] Клиент подключился (socketId: wLbGOhwJ2PKobPEeAAAh)
+[2025-06-10T18:27:16.628Z] [INFO] Отправлен список публичных комнат: socketId=wLbGOhwJ2PKobPEeAAAh, rooms=1
+[2025-06-10T18:27:16.640Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-10T18:27:18.535Z] [INFO] Игрок присоединился: roomCode=ANF4B6, name=loshka, socketId=wLbGOhwJ2PKobPEeAAAh, creatorName=vika, isHost=false
+[2025-06-10T18:27:18.601Z] [INFO] Игрок покинул комнату: roomCode=ANF4B6, name=loshka, socketId=wLbGOhwJ2PKobPEeAAAh
+[2025-06-10T18:27:18.602Z] [INFO] Клиент отключился (socketId: wLbGOhwJ2PKobPEeAAAh)
+[2025-06-10T18:27:18.687Z] [INFO] Клиент подключился (socketId: hJMJbRkPqKNu0w15AAAj)
+[2025-06-10T18:27:18.701Z] [INFO] История чата отправлена: roomCode=ANF4B6, socketId=hJMJbRkPqKNu0w15AAAj
+[2025-06-10T18:27:18.703Z] [INFO] Игрок присоединился: roomCode=ANF4B6, name=loshka, socketId=hJMJbRkPqKNu0w15AAAj, creatorName=vika, isHost=false
+[2025-06-10T18:27:34.950Z] [INFO] Игрок исключён из комнаты: roomCode=ANF4B6, player=loshka, playerId=hJMJbRkPqKNu0w15AAAj
+[2025-06-10T18:27:39.578Z] [INFO] Клиент отключился (socketId: hJMJbRkPqKNu0w15AAAj)
+[2025-06-10T18:27:39.687Z] [INFO] Клиент подключился (socketId: jXQNyI9pyIc4j5bPAAAl)
+[2025-06-10T18:27:39.708Z] [INFO] Отправлен список публичных комнат: socketId=jXQNyI9pyIc4j5bPAAAl, rooms=1
+[2025-06-10T18:27:39.709Z] [INFO] Проверка аутентификации: userId=1, nickname=loshka, gender=male
+[2025-06-10T18:27:45.202Z] [INFO] Клиент отключился (socketId: lu9kE5foDtyFjERbAAAf)
+[2025-06-10T18:27:47.815Z] [INFO] Клиент отключился (socketId: jXQNyI9pyIc4j5bPAAAl)
+[2025-06-10T18:27:50.215Z] [INFO] Отправлено событие hostLeft: roomCode=ANF4B6, players=0
+[2025-06-10T18:27:50.221Z] [INFO] Комната удалена из базы данных: roomCode=ANF4B6, sessionId=81
+[2025-06-10T18:27:50.221Z] [INFO] Комната закрыта: roomCode=ANF4B6
+[2025-06-10T18:28:06.915Z] [INFO] Клиент подключился (socketId: yfLUttgOLrWh-qvZAAAn)
+[2025-06-10T18:28:06.929Z] [INFO] Отправлен список публичных комнат: socketId=yfLUttgOLrWh-qvZAAAn, rooms=0
+[2025-06-10T18:28:07.032Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:28:08.746Z] [INFO] Комната создана: roomCode=IX4AAL, creator=vika, sessionId=82, socketId=yfLUttgOLrWh-qvZAAAn
+[2025-06-10T18:28:08.846Z] [INFO] Клиент подключился (socketId: 6SOBJO1xb_4h2UYLAAAp)
+[2025-06-10T18:28:08.850Z] [INFO] Клиент отключился (socketId: yfLUttgOLrWh-qvZAAAn)
+[2025-06-10T18:28:08.880Z] [INFO] История чата отправлена: roomCode=IX4AAL, socketId=6SOBJO1xb_4h2UYLAAAp
+[2025-06-10T18:28:08.881Z] [INFO] Игрок присоединился: roomCode=IX4AAL, name=vika, socketId=6SOBJO1xb_4h2UYLAAAp, creatorName=vika, isHost=true
+[2025-06-10T18:28:17.631Z] [INFO] Вопрос отправлен: roomCode=IX4AAL, questionIndex=0
+[2025-06-10T18:28:17.631Z] [INFO] Игра началась: roomCode=IX4AAL, questionCount=15
+[2025-06-10T18:28:23.901Z] [INFO] Отправлено событие hostLeft: roomCode=IX4AAL, players=0
+[2025-06-10T18:28:23.910Z] [INFO] Комната удалена из базы данных: roomCode=IX4AAL, sessionId=82
+[2025-06-10T18:28:23.910Z] [INFO] Комната закрыта: roomCode=IX4AAL
+[2025-06-10T18:28:23.993Z] [INFO] Клиент отключился (socketId: 6SOBJO1xb_4h2UYLAAAp)
+[2025-06-10T18:28:24.002Z] [INFO] Клиент подключился (socketId: zc3oceaF_YXlreIuAAAr)
+[2025-06-10T18:28:24.011Z] [INFO] Отправлен список публичных комнат: socketId=zc3oceaF_YXlreIuAAAr, rooms=0
+[2025-06-10T18:28:24.013Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:28:25.550Z] [INFO] Комната создана: roomCode=C0H2ME, creator=vika, sessionId=83, socketId=zc3oceaF_YXlreIuAAAr
+[2025-06-10T18:28:25.617Z] [INFO] Клиент подключился (socketId: sLvGNdDU0ZmakorwAAAt)
+[2025-06-10T18:28:25.628Z] [INFO] Клиент отключился (socketId: zc3oceaF_YXlreIuAAAr)
+[2025-06-10T18:28:25.647Z] [INFO] История чата отправлена: roomCode=C0H2ME, socketId=sLvGNdDU0ZmakorwAAAt
+[2025-06-10T18:28:25.650Z] [INFO] Игрок присоединился: roomCode=C0H2ME, name=vika, socketId=sLvGNdDU0ZmakorwAAAt, creatorName=vika, isHost=true
+[2025-06-10T18:28:41.546Z] [INFO] Отправлено событие hostLeft: roomCode=C0H2ME, players=0
+[2025-06-10T18:28:41.553Z] [INFO] Комната удалена из базы данных: roomCode=C0H2ME, sessionId=83
+[2025-06-10T18:28:41.553Z] [INFO] Комната закрыта: roomCode=C0H2ME
+[2025-06-10T18:28:41.632Z] [INFO] Клиент подключился (socketId: DtgIe_xc38K21szMAAAv)
+[2025-06-10T18:28:41.678Z] [INFO] Клиент отключился (socketId: sLvGNdDU0ZmakorwAAAt)
+[2025-06-10T18:28:41.704Z] [INFO] Отправлен список публичных комнат: socketId=DtgIe_xc38K21szMAAAv, rooms=0
+[2025-06-10T18:28:41.708Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:28:44.317Z] [INFO] Пользователь вышел
+[2025-06-10T18:28:44.350Z] [INFO] Клиент отключился (socketId: DtgIe_xc38K21szMAAAv)
+[2025-06-10T18:28:44.402Z] [INFO] Клиент подключился (socketId: p117wkxJgMQOD52bAAAx)
+[2025-06-10T18:28:44.402Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T18:28:44.457Z] [INFO] Отправлен список публичных комнат: socketId=p117wkxJgMQOD52bAAAx, rooms=0
+[2025-06-10T18:28:50.710Z] [INFO] Клиент отключился (socketId: p117wkxJgMQOD52bAAAx)
+[2025-06-10T18:28:53.023Z] [INFO] Клиент подключился (socketId: skWvYld9Z-gj43RgAAAz)
+[2025-06-10T18:28:53.027Z] [INFO] Проверка аутентификации: пользователь не аутентифицирован
+[2025-06-10T18:28:53.033Z] [INFO] Отправлен список публичных комнат: socketId=skWvYld9Z-gj43RgAAAz, rooms=0
+[2025-06-10T18:28:56.077Z] [INFO] Пользователь вошёл
+[2025-06-10T18:28:56.836Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:28:56.864Z] [INFO] Клиент отключился (socketId: skWvYld9Z-gj43RgAAAz)
+[2025-06-10T18:28:59.094Z] [INFO] Клиент подключился (socketId: tTqHthhynUtoobsUAAA1)
+[2025-06-10T18:28:59.154Z] [INFO] Отправлен список публичных комнат: socketId=tTqHthhynUtoobsUAAA1, rooms=0
+[2025-06-10T18:28:59.156Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:29:00.556Z] [INFO] Клиент отключился (socketId: tTqHthhynUtoobsUAAA1)
+[2025-06-10T18:29:01.659Z] [INFO] Клиент подключился (socketId: 6sHr6cpJ0Ck2QsefAAA3)
+[2025-06-10T18:29:01.664Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:29:01.713Z] [INFO] Отправлен список публичных комнат: socketId=6sHr6cpJ0Ck2QsefAAA3, rooms=0
+[2025-06-10T18:29:04.916Z] [INFO] Клиент отключился (socketId: 6sHr6cpJ0Ck2QsefAAA3)
+[2025-06-10T18:29:08.104Z] [INFO] Клиент подключился (socketId: rXF38I_hERecrejAAAA5)
+[2025-06-10T18:29:08.119Z] [INFO] Отправлен список публичных комнат: socketId=rXF38I_hERecrejAAAA5, rooms=0
+[2025-06-10T18:29:08.121Z] [INFO] Проверка аутентификации: userId=2, nickname=vika, gender=female
+[2025-06-10T18:29:13.254Z] [INFO] Клиент отключился (socketId: rXF38I_hERecrejAAAA5)
