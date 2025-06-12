@@ -1,5 +1,6 @@
 // Определяем функции alert в глобальной области видимости
 let alertResolve = null;
+let confirmCallback = null;
 
 function showCustomAlert(message, type = 'info', callback = null) {
     const currentLanguage = localStorage.getItem('language') || 'ru';
@@ -38,6 +39,55 @@ function closeCustomAlert() {
     if (alertResolve) {
         alertResolve();
         alertResolve = null;
+    }
+}
+
+function showCustomConfirm(message, callback) {
+    const currentLanguage = localStorage.getItem('language') || 'ru';
+    const modal = document.getElementById('custom-confirm-modal');
+    const title = document.getElementById('custom-confirm-title');
+    const messageElement = document.getElementById('custom-confirm-message');
+    const yesButton = document.querySelector('#custom-confirm-modal .confirm-yes');
+    const noButton = document.querySelector('#custom-confirm-modal .confirm-no');
+
+    if (!modal || !title || !messageElement || !yesButton || !noButton) {
+        console.error('Custom confirm elements not found:', {
+            modal: !!modal,
+            title: !!title,
+            messageElement: !!messageElement,
+            yesButton: !!yesButton,
+            noButton: !!noButton
+        });
+        return;
+    }
+
+    title.textContent = currentLanguage === 'en' ? 'Confirmation' : 'Подтверждение';
+    messageElement.textContent = message;
+    yesButton.textContent = currentLanguage === 'en' ? 'Yes' : 'Да';
+    noButton.textContent = currentLanguage === 'en' ? 'No' : 'Нет';
+
+    confirmCallback = callback;
+    modal.classList.remove('alert-error', 'alert-success', 'alert-info');
+    modal.classList.add('alert-info');
+    modal.style.display = 'block';
+}
+
+function closeCustomConfirm() {
+    const modal = document.getElementById('custom-confirm-modal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+    confirmCallback = null;
+}
+
+function confirmCustomAction() {
+    const modal = document.getElementById('custom-confirm-modal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+    if (confirmCallback) {
+        confirmCallback();
+        confirmCallback = null;
     }
 }
 
@@ -275,11 +325,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 kickBtn.className = 'kick-btn';
                 kickBtn.style.marginLeft = '10px';
                 kickBtn.onclick = () => {
-                    if (confirm(currentLanguage === 'en'
-                        ? `Are you sure you want to kick ${player.name}?`
-                        : `Вы уверены, что хотите кикнуть ${player.name}?`)) {
-                        socket.emit('kickPlayer', { roomCode, playerId: player.id });
-                    }
+                    showCustomConfirm(
+                        currentLanguage === 'en'
+                            ? `Are you sure you want to kick ${player.name}?`
+                            : `Вы уверены, что хотите кикнуть ${player.name}?`,
+                        () => socket.emit('kickPlayer', { roomCode, playerId: player.id })
+                    );
                 };
                 li.appendChild(kickBtn);
             }
@@ -389,15 +440,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const logoutBtn = document.getElementById('logout-btn');
     if (logoutBtn) {
         logoutBtn.addEventListener('click', () => {
-            if (window.confirm(currentLanguage === 'en'
-                ? 'Are you sure you want to leave?'
-                : 'Вы уверены, что хотите выйти?')) {
-                socket.emit('leaveRoom', roomCode);
-                localStorage.removeItem('nickname');
-                localStorage.removeItem('roomCode');
-                sessionStorage.removeItem('alreadyJoined');
-                window.location.href = 'index.html';
-            }
+            showCustomConfirm(
+                currentLanguage === 'en'
+                    ? 'Are you sure you want to leave?'
+                    : 'Вы уверены, что хотите выйти?',
+                () => {
+                    socket.emit('leaveRoom', roomCode);
+                    localStorage.removeItem('nickname');
+                    localStorage.removeItem('roomCode');
+                    sessionStorage.removeItem('alreadyJoined');
+                    showCustomAlert(
+                        currentLanguage === 'en'
+                            ? 'You have left the game!'
+                            : 'Вы покинули игру!',
+                        'success',
+                        () => window.location.href = `index.html?lang=${currentLanguage}`
+                    );
+                }
+            );
         });
     }
 
@@ -434,11 +494,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 deleteBtn.className = 'delete-btn';
                 deleteBtn.style.marginLeft = '10px';
                 deleteBtn.onclick = () => {
-                    if (confirm(currentLanguage === 'en'
-                        ? `Are you sure you want to delete the message from ${name}?`
-                        : `Вы уверены, что хотите удалить сообщение от ${name}?`)) {
-                        socket.emit('deleteMessage', { roomCode, messageId: id });
-                    }
+                    showCustomConfirm(
+                        currentLanguage === 'en'
+                            ? `Are you sure you want to delete the message from ${name}?`
+                            : `Вы уверены, что хотите удалить сообщение от ${name}?`,
+                        () => socket.emit('deleteMessage', { roomCode, messageId: id })
+                    );
                 };
                 div.appendChild(deleteBtn);
             }

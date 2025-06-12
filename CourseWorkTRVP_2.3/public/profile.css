@@ -43,11 +43,11 @@ input, textarea, button, select {
     cursor: pointer;
     font-weight: bold;
     font-family: 'MyFont', sans-serif;
-    transition: background-color 0.2s ease; /* Плавный переход цвета */
+    transition: background-color 0.2s ease;
 }
 
 .tab-btn:hover, .logout:hover {
-    background-color: #ff9b9b; /* Затемнённый оттенок #ffb5b5 */
+    background-color: #ff9b9b;
 }
 
 .logout {
@@ -91,11 +91,11 @@ input, textarea, button, select {
     font-size: 18px;
     padding: 5px;
     cursor: pointer;
-    transition: background-color 0.2s ease; /* Плавный переход цвета */
+    transition: background-color 0.2s ease;
 }
 
 .close-btn:hover {
-    background-color: #e55; /* Затемнённый оттенок #ff6666 */
+    background-color: #e55;
 }
 
 .tab-content {
@@ -128,11 +128,11 @@ textarea {
     cursor: pointer;
     width: 200px;
     margin-top: 15px;
-    transition: background-color 0.2s ease; /* Плавный переход цвета */
+    transition: background-color 0.2s ease;
 }
 
 .delete:hover {
-    background-color: #ff6f6f; /* Затемнённый оттенок #ff8888 */
+    background-color: #ff6f6f;
 }
 
 .save-btn {
@@ -142,11 +142,11 @@ textarea {
     font-weight: bold;
     cursor: pointer;
     width: 200px;
-    transition: background-color 0.2s ease; /* Плавный переход цвета */
+    transition: background-color 0.2s ease;
 }
 
 .save-btn:hover {
-    background-color: #aaff66; /* Затемнённый оттенок #baff7d */
+    background-color: #aaff66;
 }
 
 .stats-summary {
@@ -208,7 +208,7 @@ th, td {
     font-family: 'MyFont', Arial, Helvetica, sans-serif;
 }
 
-/* Стили для кастомного alert */
+/* Стили для модальных окон */
 .modal {
     display: none;
     position: fixed;
@@ -220,10 +220,16 @@ th, td {
     z-index: 1000;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-#custom-alert-modal .modal-content {
-    background-color: #d3f5ef; /* Фон, как у .container */
+.modal[style*="display: block"] {
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #d3f5ef;
     border: 2px solid #999;
     box-shadow: 4px 4px #888;
     padding: 15px;
@@ -231,12 +237,11 @@ th, td {
     max-width: 350px;
     margin: 15% auto;
     text-align: center;
-    font-size: 18px;
     font-family: 'MyFont', sans-serif;
     color: #333;
 }
 
-#custom-alert-modal .modal-header {
+.modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -244,75 +249,92 @@ th, td {
     padding-bottom: 10px;
 }
 
-#custom-alert-modal .modal-header h2 {
+.modal-header h2 {
     font-size: 16px;
     margin: 0;
 }
 
-#custom-alert-modal .modal-body p {
+.modal-body p {
     margin: 15px 0 10px;
     font-size: 14px;
     color: #333;
 }
 
+.modal .close-btn {
+    background-color: #f66;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.modal .close-btn:hover {
+    background-color: #e55;
+}
+
+/* Стили для кастомного alert */
 #custom-alert-modal .save-btn {
-    background-color: #baff7d; /* Зеленый, как у кнопки сохранения */
+    background-color: #baff7d;
     border: none;
     padding: 8px 20px;
     font-weight: bold;
     font-family: 'MyFont', sans-serif;
     cursor: pointer;
     font-size: 14px;
-    width: background-color 120px;
+    width: 120px;
     transition: background-color 0.2s ease;
 }
 
 #custom-alert-modal .save-btn:hover {
-    background-color: #aaff66; /* Затемненный оттенок */
+    background-color: #aaff66;
 }
 
-@media (max-width: 480px) {
-    body {
-        padding: 5px;
-    }
+/* Стили для кастомного confirm */
+#custom-confirm-modal .modal-content {
+    background-color: #e5f8f1; /* Как у .stats-summary */
+    border: 2px solid #999;
+    box-shadow: 4px 4px #888;
+}
 
-    .sidebar {
-        flex-direction: column;
-        align-items: center;
-    }
+#custom-confirm-modal .confirm-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
 
-    .user-info {
-        flex-direction: column;
-        text-align: center;
-    }
+#custom-confirm-modal .save-btn.confirm-yes {
+    background-color: #baff7d;
+    border: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-family: 'MyFont', sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100px;
+    transition: background-color 0.2s ease;
+}
 
-    .tab-btn, .logout {
-        width: 100%;
-        margin: 5px 0;
-        font-size: 9px;
-    }
+#custom-confirm-modal .save-btn.confirm-yes:hover {
+    background-color: #aaff66;
+}
 
-    .header h1 {
-        font-size: 16px;
-    }
+#custom-confirm-modal .delete.confirm-no {
+    background-color: #ff8888;
+    border: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-family: 'MyFont', sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100px;
+    transition: background-color 0.2s ease;
+}
 
-    .close-btn {
-        font-size: 12px;
-        padding: 2px 5px;
-    }
-
-    .stats-summary div {
-        flex: 1 1 100%;
-        text-align: left;
-    }
-
-    table {
-        font-size: 9px;
-    }
-
-    th, td {
-        padding: 3px;
-    }
+#custom-confirm-modal .delete.confirm-no:hover {
+    background-color: #ff6f6f;
 }
 
 @media (max-width: 768px) {
@@ -320,7 +342,6 @@ th, td {
         flex-direction: column;
         max-width: 100%;
     }
-
     .sidebar {
         width: 97%;
         border-right: none;
@@ -331,70 +352,126 @@ th, td {
         padding: 10px;
         gap: 5px;
     }
-
     .user-info {
         flex-direction: column;
         text-align: center;
     }
-
     .avatar {
         width: 48px;
         height: 48px;
     }
-
     .nickname {
         font-size: 10px;
     }
-
     .tab-btn, .logout {
         flex: 1;
         margin: 5px;
         padding: 8px;
         font-size: 10px;
     }
-
     .content {
         padding: 10px;
     }
-
     .header h1 {
         font-size: 18px;
     }
-
     .close-btn {
         font-size: 14px;
         padding: 3px 6px;
     }
-
     .form-group label {
         font-size: 12px;
     }
-
     .form-group input,
     .form-group textarea {
         font-size: 10px;
         padding: 4px;
     }
-
     .delete, .save-btn {
         font-size: 10px;
         padding: 8px;
     }
-
     .stats-summary {
         font-size: 10px;
         gap: 5px;
     }
-
     .stats-summary div {
         flex: 1 1 120px;
     }
-
     table {
         font-size: 10px;
     }
-
     th, td {
         padding: 4px;
+    }
+    .modal-content {
+        width: 95%;
+        margin: 20% auto;
+    }
+    .modal-header h2 {
+        font-size: 14px;
+    }
+    .modal-body p {
+        font-size: 12px;
+    }
+    #custom-alert-modal .save-btn,
+    #custom-confirm-modal .save-btn.confirm-yes,
+    #custom-confirm-modal .delete.confirm-no {
+        font-size: 12px;
+        padding: 6px 15px;
+        width: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    .sidebar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tab-btn, .logout {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 9px;
+    }
+    .header h1 {
+        font-size: 16px;
+    }
+    .close-btn {
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+    .stats-summary div {
+        flex: 1 1 100%;
+        text-align: left;
+    }
+    table {
+        font-size: 9px;
+    }
+    th, td {
+        padding: 3px;
+    }
+    .modal-content {
+        width: 95%;
+        margin: 25% auto;
+    }
+    .modal-header h2 {
+        font-size: 12px;
+    }
+    .modal-body p {
+        font-size: 10px;
+    }
+    #custom-alert-modal .save-btn,
+    #custom-confirm-modal .save-btn.confirm-yes,
+    #custom-confirm-modal .delete.confirm-no {
+        font-size: 10px;
+        padding: 5px 12px;
+        width: 80px;
     }
 }

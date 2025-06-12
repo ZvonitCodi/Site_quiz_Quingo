@@ -109,5 +109,21 @@
         </div>
     </div>
 </div>
+<!-- Модальное окно для кастомного confirm -->
+  <div id="custom-confirm-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="custom-confirm-title">Подтверждение</h2>
+        <button class="close-btn" onclick="closeCustomConfirm()">×</button>
+      </div>
+      <div class="modal-body">
+        <p id="custom-confirm-message"></p>
+        <div class="confirm-buttons">
+          <button class="save-btn confirm-yes" onclick="confirmCustomAction()">Да</button>
+          <button class="delete confirm-no" onclick="closeCustomConfirm()">Нет</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

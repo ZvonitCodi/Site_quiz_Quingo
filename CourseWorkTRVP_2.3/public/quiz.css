@@ -323,7 +323,7 @@ body {
     background-color: #5ba647;
 }
 
-/* Стили для кастомного alert */
+/* Стили для модальных окон */
 .modal {
     display: none;
     position: fixed;
@@ -335,11 +335,15 @@ body {
     z-index: 1000;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-#custom-alert-modal .modal-content {
-    background-color: #fff5f5; /* Фон, как у .sidebar */
-    border: 2px solid #ffcccc; /* Граница, как у .sidebar */
+.modal[style*="display: block"] {
+    opacity: 1;
+}
+
+.modal-content {
     padding: 15px;
     width: 90%;
     max-width: 350px;
@@ -350,7 +354,7 @@ body {
     border-radius: 5px;
 }
 
-#custom-alert-modal .modal-header {
+.modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -358,13 +362,13 @@ body {
     padding-bottom: 10px;
 }
 
-#custom-alert-modal .modal-header h2 {
+.modal-header h2 {
     font-size: 1.2rem;
     margin: 0;
 }
 
-#custom-alert-modal .modal-header .close-btn {
-    background-color: #e74c3c; /* Красный, как .leave */
+.close-btn {
+    background-color: #e74c3c;
     border: none;
     color: white;
     font-size: 1rem;
@@ -374,18 +378,24 @@ body {
     transition: background-color 0.3s;
 }
 
-#custom-alert-modal .modal-header .close-btn:hover {
+.close-btn:hover {
     background-color: #c0392b;
 }
 
-#custom-alert-modal .modal-body p {
+.modal-body p {
     margin: 15px 0 10px;
     font-size: 0.9rem;
     color: #333;
 }
 
+/* Стили для кастомного alert */
+#custom-alert-modal .modal-content {
+    background-color: #fff5f5; /* Как у .sidebar */
+    border: 2px solid #ffcccc; /* Как у .sidebar */
+}
+
 #custom-alert-modal .btn {
-    background-color: #6fcb52; 
+    background-color: #6fcb52;
     border: none;
     padding: 0.5rem 1rem;
     font-weight: bold;
@@ -402,20 +412,73 @@ body {
     background-color: #5ba647;
 }
 
-/* Типы alert */
 #custom-alert-modal.alert-error .modal-content {
-    background-color: #ffe6e6; 
+    background-color: #ffe6e6; /* Как у .question-section */
     border-color: #ffcccc;
 }
 
 #custom-alert-modal.alert-success .modal-content {
-    background-color: #e6ffe6; 
+    background-color: #e6ffe6; /* Как у .result-section */
     border-color: #6fcb52;
 }
 
 #custom-alert-modal.alert-info .modal-content {
-    background-color: #fff5f5; /* Стандартный фон */
+    background-color: #fff5f5;
     border-color: #ffcccc;
+}
+
+/* Стили для кастомного confirm */
+#custom-confirm-modal .modal-content {
+    background-color: #e6faff; /* Светло-голубой, чтобы отличаться от alert */
+    border: 2px solid #b3e0ff; /* Голубая граница */
+}
+
+#custom-confirm-modal .confirm-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#custom-confirm-modal .btn.confirm-yes {
+    background-color: #6fcb52; /* Зеленый, как стандартный .btn */
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-family: 'MyFont', sans-serif;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#custom-confirm-modal .btn.confirm-yes:hover {
+    background-color: #5ba647;
+}
+
+#custom-confirm-modal .btn.confirm-no {
+    background-color: #e74c3c; /* Красный, как .leave */
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-family: 'MyFont', sans-serif;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#custom-confirm-modal .btn.confirm-no:hover {
+    background-color: #c0392b;
+}
+
+#custom-confirm-modal.alert-info .modal-content {
+    background-color: #e6faff;
+    border-color: #b3e0ff;
 }
 
 @media (max-width: 768px) {
@@ -487,6 +550,32 @@ body {
         font-size: 0.9rem;
         padding: 0.4rem 0.8rem;
     }
+
+    .modal-content {
+        width: 95%;
+        margin: 20% auto;
+    }
+
+    .modal-header h2 {
+        font-size: 1rem;
+    }
+
+    .modal-body p {
+        font-size: 0.8rem;
+    }
+
+    #custom-alert-modal .btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        width: 100px;
+    }
+
+    #custom-confirm-modal .btn.confirm-yes,
+    #custom-confirm-modal .btn.confirm-no {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        width: 90px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -551,5 +640,31 @@ body {
     #question-count {
         font-size: 0.8rem;
         width: 50px;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 25% auto;
+    }
+
+    .modal-header h2 {
+        font-size: 0.9rem;
+    }
+
+    .modal-body p {
+        font-size: 0.75rem;
+    }
+
+    #custom-alert-modal .btn {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+        width: 90px;
+    }
+
+    #custom-confirm-modal .btn.confirm-yes,
+    #custom-confirm-modal .btn.confirm-no {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+        width: 80px;
     }
 }

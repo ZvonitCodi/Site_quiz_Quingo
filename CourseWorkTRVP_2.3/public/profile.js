@@ -4,6 +4,7 @@ let currentUser = null;
 let isNicknameValid = false;
 const logBuffer = [];
 let isSendingLogs = false;
+let confirmCallback = null;
 
 let elements = {};
 
@@ -58,6 +59,43 @@ function closeCustomAlert() {
     const modal = document.getElementById('custom-alert-modal');
     if (modal) {
         modal.style.display = 'none';
+    }
+}
+
+function showCustomConfirm(message, callback) {
+    const currentLanguage = localStorage.getItem('language') || 'ru';
+    const modal = document.getElementById('custom-confirm-modal');
+    const title = document.getElementById('custom-confirm-title');
+    const messageElement = document.getElementById('custom-confirm-message');
+    const yesButton = document.querySelector('#custom-confirm-modal .confirm-yes');
+    const noButton = document.querySelector('#custom-confirm-modal .confirm-no');
+
+    if (!modal || !title || !messageElement || !yesButton || !noButton) {
+        console.error('Custom confirm elements not found');
+        return;
+    }
+
+    title.textContent = currentLanguage === 'en' ? 'Confirmation' : 'Подтверждение';
+    messageElement.textContent = message;
+    yesButton.textContent = currentLanguage === 'en' ? 'Yes' : 'Да';
+    noButton.textContent = currentLanguage === 'en' ? 'No' : 'Нет';
+
+    confirmCallback = callback;
+    modal.style.display = 'block';
+}
+
+function closeCustomConfirm() {
+    const modal = document.getElementById('custom-confirm-modal');
+    if (modal) modal.style.display = 'none';
+    confirmCallback = null;
+}
+
+function confirmCustomAction() {
+    const modal = document.getElementById('custom-confirm-modal');
+    if (modal) modal.style.display = 'none';
+    if (confirmCallback) {
+        confirmCallback();
+        confirmCallback = null;
     }
 }
 
@@ -449,29 +487,39 @@ async function loadRecentGames() {
     }
 }
 
-function deleteAccount() {
+async function deleteAccount() {
     const currentLanguage = localStorage.getItem('language') || 'ru';
-    if (!confirm(currentLanguage === 'en'
-        ? 'Are you sure you want to delete your account? This action cannot be undone.'
-        : 'Вы уверены, что хотите удалить аккаунт? Это действие нельзя отменить.')) return;
-
-    fetchWithErrorHandling(`${API_URL}/user/${currentUser.id}`, { method: 'DELETE' })
-        .then(() => logoutUser())
-        .catch(async error => {
-            await logError('Не удалось удалить аккаунт', '');
-            showCustomAlert(error.message || (currentLanguage === 'en' ? 'Failed to delete account' : 'Не удалось удалить аккаунт'));
-        });
+    showCustomConfirm(
+        currentLanguage === 'en'
+            ? 'Are you sure you want to delete your account? This action cannot be undone.'
+            : 'Вы уверены, что хотите удалить аккаунт? Это действие нельзя отменить.',
+        async () => {
+            try {
+                await fetchWithErrorHandling(`${API_URL}/user/${currentUser.id}`, { method: 'DELETE' });
+                logoutUser();
+            } catch (error) {
+                await logError('Не удалось удалить аккаунт', '');
+                showCustomAlert(error.message || (currentLanguage === 'en' ? 'Failed to delete account' : 'Не удалось удалить аккаунт'));
+            }
+        }
+    );
 }
 
 async function logoutUser() {
-    try {
-        await fetchWithErrorHandling(`${API_URL}/auth/logout`, { method: 'POST' });
-        localStorage.removeItem('nickname');
-        window.location.href = 'index.html';
-    } catch (error) {
-        await logError('Ошибка при выходе', '');
-        showCustomAlert((localStorage.getItem('language') === 'en' ? 'Error logging out: ' : 'Ошибка при выходе: ') + error.message);
-    }
+    const currentLanguage = localStorage.getItem('language') || 'ru';
+    showCustomConfirm(
+        currentLanguage === 'en' ? 'Are you sure you want to logout?' : 'Вы уверены, что хотите выйти?',
+        async () => {
+            try {
+                await fetchWithErrorHandling(`${API_URL}/auth/logout`, { method: 'POST' });
+                localStorage.removeItem('nickname');
+                window.location.href = 'index.html';
+            } catch (error) {
+                await logError('Ошибка при выходе', '');
+                showCustomAlert((currentLanguage === 'en' ? 'Error logging out: ' : 'Ошибка при выходе: ') + error.message);
+            }
+        }
+    );
 }
 
 function showTab(tabId) {
